@@ -13,6 +13,9 @@
   },
   "dependencies": {
     "gatsby": "^2.0.76",
+    "gatsby-plugin-preact": "^2.0.8",
+    "preact": "^8.4.2",
+    "preact-compat": "^3.18.4",
     "react": "^16.5.1",
     "react-dom": "^16.5.1"
   },
