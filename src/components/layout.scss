@@ -1,0 +1,14 @@
+$primary: rgba(5, 199, 147, 1);
+
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+div {
+  background: rgb(28, 28, 28);
+  color: $primary;
+  height: 100%;
+  width: 100%;
+}
