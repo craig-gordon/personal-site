@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5%;
+}
+
+.wrapper {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+}
+
+.wrapper {
+  div {
+    padding-bottom: 3px;
+    border-bottom: solid 4px transparent;
+  }
+  div:hover {
+    border-bottom: solid 4px;
+  }
+}

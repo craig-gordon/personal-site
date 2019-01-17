@@ -1,6 +1,10 @@
-import React from "react"
-import "./layout.scss"
+import React from 'react';
+import styles from './layout.module.scss';
 
-const Layout = ({ children }) => <div>{ children }</div>;
+const Layout = ({ children }) => (
+  <div className={styles.layout}>
+    { children }
+  </div>
+);
 
 export default Layout;
