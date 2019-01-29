@@ -128,12 +128,6 @@ const options = {
         },
         {
           className: styles.bubble,
-          icon: 'cssmodules.svg',
-          name: 'CSS Modules',
-          value: 600
-        },
-        {
-          className: styles.bubble,
           icon: 'bootstrap.svg',
           name: 'Bootstrap',
           value: 700

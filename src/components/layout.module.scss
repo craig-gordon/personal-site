@@ -1,11 +1,11 @@
 $primary: rgb(179, 179, 179);
 $accent: rgba(5, 199, 147, 1);
 
-html {
+body {
   box-sizing: border-box;
   margin: 0;
   background: rgb(28, 28, 28);
-  padding: 2% 5% 0 5%;
+  width: calc(100vw - (100vw - 100%));
 }
 
 .layout {

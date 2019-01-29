@@ -1,0 +1,29 @@
+.landing-container {
+  background: #ffffd9;
+  height: 100vh;
+}
+
+.parallax-wrapper {
+  border-top: calc(50vh - 125px) solid #081d58;
+}
+
+.parallax-row {
+  width: 100%;
+  background-repeat: repeat;
+  height: 5px;
+}
+
+@for $i from 0 through 49 {
+  #row#{$i} {
+     animation: move #{5 - (($i+1)/12.5)}s linear infinite;
+  }
+}
+
+@keyframes move {
+ from {
+   background-position: 0 0
+ }
+ to { 
+   background-position: -500px 0
+ }
+}

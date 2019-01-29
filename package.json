@@ -19,6 +19,7 @@
     "highcharts": "^7.0.2",
     "highcharts-react-official": "^2.0.0",
     "node-sass": "^4.11.0",
+    "pnglib": "^0.0.1",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-typography": "^0.16.18",
