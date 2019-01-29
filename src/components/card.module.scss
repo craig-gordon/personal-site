@@ -39,3 +39,14 @@
     }
   }
 }
+
+.imgContainer {
+  display: grid;
+  grid-column: span 2;
+  justify-content: center;
+}
+
+.img {
+  padding: 12px !important;
+  margin: 0 !important;
+}

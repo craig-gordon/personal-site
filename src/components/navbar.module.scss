@@ -11,11 +11,15 @@
 }
 
 .wrapper {
-  div {
+  .link {
+    color: rgb(179, 179, 179);
+    text-decoration-line: none;
     padding-bottom: 3px;
     border-bottom: solid 4px transparent;
+    font-size: 18px;
   }
-  div:hover {
+  .link:hover {
     border-bottom: solid 4px;
+    cursor: pointer;
   }
 }
