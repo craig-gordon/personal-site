@@ -1,10 +1,11 @@
 $primary: rgb(179, 179, 179);
 $accent: rgba(5, 199, 147, 1);
+$oldbg: rgb(28, 28, 28);
 
 body {
   box-sizing: border-box;
   margin: 0;
-  background: rgb(28, 28, 28);
+  background: rgb(255, 255, 217);
   width: calc(100vw - (100vw - 100%));
 }
 

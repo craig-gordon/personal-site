@@ -1,6 +1,8 @@
 import React from 'react';
 import './landing.scss';
 
+import { FaPaperPlane } from 'react-icons/fa';
+
 import PNGlib from 'pnglib';
 
 class Landing extends React.Component {
@@ -11,31 +13,31 @@ class Landing extends React.Component {
 
   componentDidMount() {
     const colors = [
-      [8, 29, 88],
+      [8, 29, 68],
       [34, 94, 168],
       [65, 182, 196],
       [199, 233, 180],
       [255, 255, 217]
     ];
     
-    function colorFromPercent(gradientProgressPercent) {
+    const colorFromPercent = (gradientProgressPercent) => {
       const bucketSize = 100 / colors.length;
       const randomFromBucketRange = (Math.random() * (bucketSize * 2)) - bucketSize;
       
       const colorPercent = gradientProgressPercent + randomFromBucketRange;
     
       if (colorPercent <= 20) {
-         return colors[0];
+        return colors[0];
       } else if (colorPercent > 20 && colorPercent <= 40) {
-         return colors[1];
+        return colors[1];
       } else if (colorPercent > 40 && colorPercent <= 60) {
-         return colors[2];
+        return colors[2];
       } else if (colorPercent > 60 && colorPercent <= 80) {
-         return colors[3];
+        return colors[3];
       } else if (colorPercent > 80) {
-         return colors[4];
+        return colors[4];
       }
-    }
+    };
     
     const pixelSize = 5;
     const pngWidth = 500;
@@ -61,12 +63,21 @@ class Landing extends React.Component {
   
   render() {
     return (
-      <div className='landing-container'>
-        {/* <div className={styles.landing}>Craig Gordon</div> */}
+      <section className='landing-container'>
+        <div className='header-container'>
+          <h1 className='header-name'>Hello, I'm <span className='name-text'>Craig Gordon</span>.</h1>
+          <h1 className='header-role'>I'm a full-stack web developer.</h1>
+          <div className='header-button'>
+            <div className='header-button-inner'>
+              <span style={{marginRight: '12px'}}>View my work</span>
+              <FaPaperPlane />
+            </div>
+          </div>
+        </div>
         <div className='parallax-wrapper'>
           {this.parallaxDivs}
         </div>
-      </div>
+      </section>
     );
   }
 };

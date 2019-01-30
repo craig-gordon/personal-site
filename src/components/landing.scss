@@ -3,8 +3,50 @@
   height: 100vh;
 }
 
-.parallax-wrapper {
-  border-top: calc(50vh - 125px) solid #081d58;
+.header-container {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+  background-color: rgb(8, 29, 68);
+  height: 70vh;
+}
+
+.header-name {
+  color: rgb(173, 173, 173);
+  margin-bottom: 12px;
+}
+
+.name-text {
+  color: rgb(227, 27, 109);
+}
+
+.header-role {
+  color: rgb(228, 228, 228);
+  margin-bottom: 20px;
+}
+
+.header-button {
+  padding: 6px;
+  border-radius: 4px;
+  background: linear-gradient(70deg, rgb(34, 94, 168), rgb(65, 182, 196), rgb(199, 233, 180), rgb(255, 255, 217), rgb(34, 94, 168), rgb(65, 182, 196), rgb(199, 233, 180));
+}
+
+.header-button-inner {
+  background: rgb(5, 18, 41);
+  color: rgb(228, 228, 228);
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-size: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.header-button-inner:hover {
+  background: unset;
+  color: rgb(35, 35, 35);
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
 }
 
 .parallax-row {
