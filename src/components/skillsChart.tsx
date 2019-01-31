@@ -10,12 +10,21 @@ import HighchartsMore from 'highcharts/highcharts-more';
 import HighchartsReact from 'highcharts-react-official';
 
 HighchartsMore(Highcharts);
-DarkUnica(Highcharts);
 
 const options = {
   chart: {
-    height: '60%',
+    backgroundColor: 'rgba(255, 255, 255, 0)',
+    height: '100%',
     type: 'packedbubble'
+  },
+  credits: {
+    enabled: false
+  },
+  legend: {
+    itemStyle: {
+      fontSize: '16px'
+    },
+    verticalAlign: 'top'
   },
   plotOptions: {
     packedbubble: {
@@ -33,6 +42,26 @@ const options = {
       },
       maxSize: '100%',
       minSize: '50%'
+    },
+    series: {
+      events: {
+        legendItemClick: function(event) {
+          if (!this.visible) {
+            return true;
+          }
+
+          let seriesIndex = this.index;
+          let series = this.chart.series;
+          
+          for (let i = 0; i < series.length; i++) {
+            if (series[i].index != seriesIndex) {
+              series[i].visible ? series[i].hide() : series[i].show();
+            }
+          }
+          
+          return false;
+        }
+      }
     }
   },
   responsive: {
@@ -267,7 +296,9 @@ const options = {
     }
   ],
   title: {
-    text: 'My Skillset'
+    style: {
+      display: 'none'
+    }
   },
   tooltip: {
     pointFormat: '<b>{point.name}</b>',

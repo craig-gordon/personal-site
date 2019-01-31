@@ -1,25 +1,51 @@
 .container {
   display: flex;
-  justify-content: center;
-  margin-bottom: 1.5%;
+  justify-content: flex-end;
+  background-color: rgb(8, 29, 68);
+  padding: 24px 40px 0 0;
 }
 
-.wrapper {
-  display: flex;
-  width: 30%;
-  justify-content: space-between;
+.link {
+  color: rgb(236, 236, 236);
+  padding-bottom: 4px;
+  border-bottom: solid 4px transparent;
+  font-size: 18px;
+  margin-left: 30px;
+
+  position: relative;
+  padding-bottom: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
 }
 
-.wrapper {
-  .link {
-    color: rgb(179, 179, 179);
-    text-decoration-line: none;
-    padding-bottom: 3px;
-    border-bottom: solid 4px transparent;
-    font-size: 18px;
-  }
-  .link:hover {
-    border-bottom: solid 4px;
-    cursor: pointer;
-  }
+.link::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  width: 0px;
+  bottom: -5px;
+  height: 5px;
+  transition: width 0.3s ease-out;
+}
+
+.link:hover::after {
+  left: 0px;
+  right: auto;
+  width: 100%;
+}
+
+.one::after {
+  background: rgb(34, 94, 168);
+}
+
+.two::after {
+  background: rgb(65, 182, 196);
+}
+
+.three::after {
+  background: rgb(199, 233, 180);
+}
+
+.four::after {
+  background: rgb(255, 255, 217);
 }

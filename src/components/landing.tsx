@@ -1,6 +1,8 @@
 import React from 'react';
 import './landing.scss';
 
+import Navbar from './navbar';
+
 import { FaPaperPlane } from 'react-icons/fa';
 
 import PNGlib from 'pnglib';
@@ -64,6 +66,7 @@ class Landing extends React.Component {
   render() {
     return (
       <section className='landing-container'>
+        <Navbar />
         <div className='header-container'>
           <h1 className='header-name'>Hello, I'm <span className='name-text'>Craig Gordon</span>.</h1>
           <h1 className='header-role'>I'm a full-stack web developer.</h1>

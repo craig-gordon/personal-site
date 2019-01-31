@@ -4,13 +4,10 @@ import styles from './navbar.module.scss';
 
 const NavBar = () => (
   <div className={styles.container}>
-    <div className={styles.wrapper}>
-      <Link to='/' className={styles.link}>About</Link>
-      <Link to='/apps' className={styles.link}>Applications</Link>
-      <Link to='/skills' className={styles.link}>Skills</Link>
-      <Link to='/resume' className={styles.link}>Resume</Link>
-      <Link to='/interests' className={styles.link}>Interests</Link>
-    </div>
+    <div className={`${styles.link} ${styles.one}`}>About</div>
+    <div className={`${styles.link} ${styles.two}`}>Portfolio</div>
+    <div className={`${styles.link} ${styles.three}`}>Interests</div>
+    <div className={`${styles.link} ${styles.four}`}>Contact</div>
   </div>
 );
 
