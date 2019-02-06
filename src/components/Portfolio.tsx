@@ -1,6 +1,6 @@
 import React from 'react';
-import Card from './card';
-import styles from './applications.module.scss';
+import Card from './Card';
+import styles from './portfolio.module.scss';
 
 import data from '../data/applications';
 

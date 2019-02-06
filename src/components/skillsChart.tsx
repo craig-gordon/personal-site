@@ -151,20 +151,8 @@ const options = {
         },
         {
           className: styles.bubble,
-          icon: 'styled.svg',
-          name: 'Styled-Components',
-          value: 800
-        },
-        {
-          className: styles.bubble,
           icon: 'bootstrap.svg',
           name: 'Bootstrap',
-          value: 700
-        },
-        {
-          className: styles.bubble,
-          icon: 'antd.svg',
-          name: 'Ant Design',
           value: 700
         }
       ],
@@ -185,18 +173,6 @@ const options = {
           icon: 'express.svg',
           name: 'Express',
           value: 900
-        },
-        {
-          className: styles.bubble,
-          icon: 'mysql.svg',
-          name: 'MySQL',
-          value: 700
-        },
-        {
-          className: styles.bubble,
-          icon: 'postgresql.svg',
-          name: 'PostgreSQL',
-          value: 800
         },
         {
           className: styles.bubble,
@@ -221,7 +197,7 @@ const options = {
           className: styles.bubble,
           icon: 'mocha.svg',
           name: 'Mocha',
-          value: 500
+          value: 600
         },
         {
           className: styles.bubble,
@@ -229,19 +205,6 @@ const options = {
           name: 'Jest',
           value: 700
         },
-        {
-          className: styles.bubble,
-          icon: 'enzyme.svg',
-          name: 'Enzyme',
-          value: 600
-        }
-      ],
-      name: 'Testing',
-      type: 'packedbubble'
-    },
-    {
-      color: 'rgb(255, 255, 255)',
-      data: [
         {
           className: styles.bubble,
           icon: 'git.svg',
@@ -270,24 +233,6 @@ const options = {
           className: styles.bubble,
           icon: 'gatsby.svg',
           name: 'GatsbyJS',
-          value: 600
-        },
-        {
-          className: styles.bubble,
-          icon: 'regex.svg',
-          name: 'RegEx',
-          value: 700
-        },
-        {
-          className: styles.bubble,
-          icon: 'now.svg',
-          name: 'Now.sh',
-          value: 600
-        },
-        {
-          className: styles.bubble,
-          icon: 'heroku.svg',
-          name: 'Heroku',
           value: 600
         }
       ],

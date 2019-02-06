@@ -1,14 +1,18 @@
 import React from 'react';
 
-import About from '../components/about';
-import Applications from '../components/applications';
-import Landing from '../components/landing';
-import Layout from '../components/layout';
+import About from '../components/About';
+import Landing from '../components/Landing';
+import Layout from '../components/Layout';
+import Portfolio from '../components/Portfolio';
+import SectionBreak from '../components/SectionBreak';
 
 export default () => (
   <Layout>
     <Landing />
+    <SectionBreak color='rgb(255, 255, 217)' />
     <About />
-    <Applications />
+    <SectionBreak color='whitesmoke' />
+    <Portfolio />
+    <SectionBreak color='white' />
   </Layout>
 );

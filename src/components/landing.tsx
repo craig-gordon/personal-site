@@ -1,7 +1,7 @@
 import React from 'react';
 import './landing.scss';
 
-import Navbar from './navbar';
+import Navbar from './Navbar';
 
 import { FaPaperPlane } from 'react-icons/fa';
 
