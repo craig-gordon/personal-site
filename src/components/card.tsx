@@ -22,7 +22,7 @@ const Card = ({data}: IPropsData) => (
     </div>
     <div className={styles.description}>
       <div>{data.description}</div>
-      <ul>{data.tools.map((tool, i) => <li key={i} style={{'color': colorMap[tool.type], 'border-color': colorMap[tool.type]}}>{tool.name}</li>)}</ul>
+      <ul>{data.tools.map((tool, i) => <li key={i} style={{'color': colorMap[tool.type], 'borderColor': colorMap[tool.type]}}>{tool.name}</li>)}</ul>
     </div>
     <div className={styles.imgContainer}>
       <img src={data.image} className={styles.img} />

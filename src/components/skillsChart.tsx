@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './skillsChart.module.scss';
 
-import DarkUnica from 'highcharts/themes/dark-unica';
-
 import Highcharts from 'highcharts';
+
+// import Highcharts from '../utils/highcharts-custom/dist/js/custom.src.js';
 
 import HighchartsMore from 'highcharts/highcharts-more';
 

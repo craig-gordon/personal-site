@@ -24,7 +24,6 @@
     "react-dom": "^16.5.1",
     "react-icons": "^3.3.0",
     "react-typography": "^0.16.18",
-    "typescript": "^3.2.2",
     "typography": "^0.16.18"
   },
   "repository": {
@@ -35,11 +34,6 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "devDependencies": {
-    "gatsby-plugin-tslint": "^0.0.2",
-    "tslint": "^5.12.1",
-    "tslint-config-prettier": "^1.17.0",
-    "tslint-eslint-rules": "^5.4.0",
-    "tslint-loader": "^3.5.4",
-    "tslint-react": "^3.6.0"
+    "typescript": "^3.3.3"
   }
 }
