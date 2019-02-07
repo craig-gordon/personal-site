@@ -1,7 +1,20 @@
 .container {
   height: 100vh;
+  background-color: whitesmoke;
+  color: rgb(99, 99, 99);
+  padding: 2% 10%;
+}
+
+.header {
+  font-size: 48px;
+  color: rgb(82, 82, 82);
+  text-align: center;
+  margin: 2% 0 4% 0;
+}
+
+.grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 3%;
   align-content: center;
-  background-color: whitesmoke;
 }

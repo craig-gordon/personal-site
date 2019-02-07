@@ -1,12 +1,17 @@
 import React from 'react';
+
+import Overview from './Overview';
 import SkillsChart from './SkillsChart';
 
 import styles from './about.module.scss';
 
 const About = () => (
   <div className={styles.container}>
-    <div />
-    <SkillsChart />
+    <h1 className={styles.header}>About Me</h1>
+    <div className={styles.grid}>
+      <Overview />
+      <SkillsChart />
+    </div>
   </div>
 );
 
