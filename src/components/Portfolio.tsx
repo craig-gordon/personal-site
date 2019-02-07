@@ -4,10 +4,12 @@ import styles from './portfolio.module.scss';
 
 import data from '../data/applications';
 
-const Applications = () => (
-  <div className={styles.grid}>
-    {data.map((datum: object, i: number) => <Card key={i} data={datum} />)}
+const Portfolio = () => (
+  <div id='portfolio' className={styles.container}>
+    <div className={styles.grid}>
+      {data.map((datum: object, i: number) => <Card key={i} data={datum} />)}
+    </div>
   </div>
 );
 
-export default Applications;
+export default Portfolio;

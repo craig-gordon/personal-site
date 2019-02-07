@@ -6,7 +6,7 @@ import SkillsChart from './SkillsChart';
 import styles from './about.module.scss';
 
 const About = () => (
-  <div className={styles.container}>
+  <div id='about' className={styles.container}>
     <h1 className={styles.header}>About Me</h1>
     <div className={styles.grid}>
       <Overview />

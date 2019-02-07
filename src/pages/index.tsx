@@ -6,6 +6,10 @@ import Layout from '../components/Layout';
 import Portfolio from '../components/Portfolio';
 import SectionBreak from '../components/SectionBreak';
 
+import smoothscroll from 'smoothscroll-polyfill';
+
+smoothscroll.polyfill();
+
 export default () => (
   <Layout>
     <Landing />

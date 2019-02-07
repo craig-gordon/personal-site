@@ -71,10 +71,12 @@ class Landing extends React.Component {
           <h1 className='header-name'>Hello, I'm <span className='name-text'>Craig Gordon</span>.</h1>
           <h1 className='header-role'>I'm a full-stack web developer.</h1>
           <div className='header-button'>
-            <div className='header-button-inner'>
-              <span style={{marginRight: '12px'}}>View my work</span>
-              <FaPaperPlane />
-            </div>
+            <a href='#about'>
+              <div className='header-button-inner'>
+                <span style={{marginRight: '12px'}}>View my work</span>
+                <FaPaperPlane />
+              </div>
+            </a>
           </div>
         </div>
         <div className='parallax-wrapper'>
