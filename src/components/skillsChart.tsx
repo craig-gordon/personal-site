@@ -1,15 +1,15 @@
 import React from 'react';
 import styles from './skillsChart.module.scss';
 
-import Highcharts from 'highcharts';
+// import Highcharts from 'highcharts';
 
-// import Highcharts from '../utils/highcharts-custom/dist/js/custom.src.js';
+import Highcharts from '../utils/highcharts-custom/dist/js/custom.src.js';
 
-import HighchartsMore from 'highcharts/highcharts-more';
+// import HighchartsMore from 'highcharts/highcharts-more';
 
 import HighchartsReact from 'highcharts-react-official';
 
-HighchartsMore(Highcharts);
+// HighchartsMore(Highcharts);
 
 const options = {
   chart: {

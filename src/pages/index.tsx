@@ -9,9 +9,9 @@ import SectionBreak from '../components/SectionBreak';
 export default () => (
   <Layout>
     <Landing />
-    <SectionBreak color='rgb(255, 255, 217)' />
+    <SectionBreak color='rgb(255, 255, 217)' bgColor='whitesmoke' />
     <About />
-    <SectionBreak color='whitesmoke' />
+    <SectionBreak color='whitesmoke' bgColor='white' />
     <Portfolio />
     <SectionBreak color='white' />
   </Layout>

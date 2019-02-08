@@ -37,7 +37,9 @@ node_modules/
 jspm_packages/
 
 # Highcharts custom build files
-src/utils/highcharts-custom/
+src/utils/highcharts-custom/highcharts-assembler-master/
+src/utils/highcharts-custom/highcharts-master/
+src/utils/highcharts-custom/custom-builder.js
 
 # Typescript v1 declaration files
 typings/
