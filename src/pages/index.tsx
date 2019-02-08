@@ -13,6 +13,5 @@ export default () => (
     <About />
     <SectionBreak color='whitesmoke' bgColor='white' />
     <Portfolio />
-    <SectionBreak color='white' />
   </Layout>
 );

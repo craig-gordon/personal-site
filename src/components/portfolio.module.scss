@@ -1,9 +1,13 @@
 .container {
   height: 100vh;
   background-color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 .grid {
+  height: 50vh;
+  justify-self: center;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 50px;
