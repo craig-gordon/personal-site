@@ -1,6 +1,6 @@
 const data = [
   {
-    description: 'A web app that enables the speedrun & high score communities to present the histories of the games they play through charts & pages.',
+    description: 'Platform for the speedrun & highscore communities to present the history of the games they play.',
     title: 'Record History',
     tools: [
       {
@@ -46,7 +46,7 @@ const data = [
     ]
   },
   {
-    description: 'A browser extension that prevents vanity searching. Users designate phrases that will be blocked when searched for on Twitter, Reddit, and other sites.',
+    description: 'Browser extension that prevents vanity searching. Users designate phrases that will be blocked when searched on popular sites.',
     image: 'antivanity.gif',
     title: 'Anti-Vanity',
     tools: [
@@ -65,7 +65,7 @@ const data = [
     ]
   },
   {
-    description: 'An emotion analytics web platform for video creators, featuring A/B testing tools and a full-featured analytics suite.',
+    description: 'Emotion analysis platform for video creators, featuring A/B testing tools and a full-featured analytics suite.',
     title: 'Emolytics',
     tools: [
       {
@@ -123,7 +123,7 @@ const data = [
     ]
   },
   {
-    description: 'A browser simulation of the classic Nintendo series, Advance Wars.',
+    description: 'Browser simulation of the classic Nintendo series, Advance Wars.',
     title: 'Neowars',
     tools: [
       {

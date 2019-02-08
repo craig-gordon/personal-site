@@ -68,7 +68,7 @@ class Landing extends React.Component {
       <section className='landing-container'>
         <Navbar />
         <div className='header-container'>
-          <h1 className='header-name'>Hello, I'm <span className='name-text'>Craig Gordon</span>.</h1>
+          <h1 style={{width: '100%', textAlign: 'center'}} className='header-name'>{`Hello, I'm  `}<span className='name-text'>Craig Gordon</span>.</h1>
           <h1 className='header-role'>I'm a full-stack web developer.</h1>
           <div className='header-button'>
             <a href='#about'>

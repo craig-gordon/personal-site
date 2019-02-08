@@ -1,23 +1,33 @@
 import Typography from 'typography';
 
 const typography = new Typography({
-  baseFontSize: '18px',
+  baseFontSize: '16px',
   baseLineHeight: 1.5,
   googleFonts: [
     {
-      name: 'Varela Round',
+      name: 'Didact Gothic',
+      styles: [
+        '400'
+      ]
+    },
+    {
+      name: 'PT Sans',
       styles: [
         '400',
-        '700'
+        '400i',
+        '700',
+        '700i'
       ]
     }
   ],
   headerFontFamily: [
+    'Didact Gothic',
     'Helvetica Neue',
     'sans-serif'
   ],
   bodyFontFamily: [
-    'Varela Round',
+    'PT Sans',
+    'Open Sans',
     'sans-serif'
   ]
 });

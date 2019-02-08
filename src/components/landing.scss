@@ -10,6 +10,10 @@
   justify-content: center;
   background-color: rgb(8, 29, 68);
   height: 70vh;
+
+  h1 {
+    font-size: 42px;
+  }
 }
 
 .header-name {
@@ -23,7 +27,7 @@
 
 .header-role {
   color: rgb(228, 228, 228);
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .header-button {
