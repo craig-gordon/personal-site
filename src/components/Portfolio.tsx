@@ -4,11 +4,19 @@ import styles from './portfolio.module.scss';
 
 import data from '../data/applications';
 
+const colors = [
+  'rgb(8, 29, 68)',
+  'rgb(34, 94, 168)',
+  'rgb(65, 182, 196)',
+  'rgb(199, 233, 180)',
+  'rgb(255, 255, 217)'
+];
+
 const Portfolio = () => (
   <div id='portfolio' className={styles.container}>
     <h1 className='section-header'>Portfolio</h1>
     <div className={styles.grid}>
-      {data.map((datum: object, i: number) => <Card key={i} data={datum} />)}
+      {data.map((app: object, i: number) => <Card key={i} app={app} color={colors[i]} />)}
     </div>
   </div>
 );

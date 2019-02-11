@@ -6,6 +6,7 @@ import Landing from '../components/Landing';
 import Layout from '../components/Layout';
 import Portfolio from '../components/Portfolio';
 import SectionBreak from '../components/SectionBreak';
+import Contact from '../components/Contact';
 
 class App extends React.Component {
   constructor(props) {
@@ -47,6 +48,8 @@ class App extends React.Component {
         <About />
         <SectionBreak color='whitesmoke' bgColor='white' />
         <Portfolio />
+        <SectionBreak color='white' bgColor='black' />
+        <Contact />
       </Layout>
     );
   }

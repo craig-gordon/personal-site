@@ -2,7 +2,8 @@ const data = [
   {
     description: 'Web platform for the speedrun & high score communities to present the history of the games they play.',
     title: 'Record History',
-    tag: 'Web App',
+    logo: 'recordhistory-logo.svg',
+    tag: 'Web',
     tools: [
       {
         name: 'React',
@@ -37,10 +38,6 @@ const data = [
         icon: 'sequelize.svg'
       },
       {
-        name: 'AWS RDS',
-        icon: 'sql.svg'
-      },
-      {
         name: 'Now.sh',
         icon: 'now.svg'
       }
@@ -50,26 +47,36 @@ const data = [
     description: 'Browser extension that prevents vanity searching on Twitter, Reddit, and other popular sites.',
     image: 'antivanity.gif',
     title: 'Anti-Vanity',
+    logo: 'antivanity-logo.svg',
     tag: 'Extension',
     tools: [
       {
-        name: 'Pure JS',
+        name: 'Chrome APIs',
+        icon: 'chrome.svg'
+      },
+      {
+        name: 'HTML',
+        icon: 'html5.svg'
+      },
+      {
+        name: 'CSS',
+        icon: 'css3.svg'
+      },
+      {
+        name: 'Pure JavaScript',
         icon: 'javascript.svg'
       },
       {
-        name: 'RegEx',
+        name: 'Regular Expressions',
         icon: 'regex.svg'
-      },
-      {
-        name: 'Chrome APIs',
-        icon: 'chrome.svg'
       }
     ]
   },
   {
     description: 'Emotion analysis platform for video creators, featuring A/B testing tools and a full-featured analytics suite.',
     title: 'Emolytics',
-    tag: 'Web App',
+    logo: 'emolytics-icon.svg',
+    tag: 'Web',
     tools: [
       {
         name: 'React',
@@ -100,20 +107,16 @@ const data = [
         icon: 'sequelize.svg'
       },
       {
-        name: 'AWS RDS',
-        icon: 'sql.svg'
-      },
-      {
         name: 'Jest',
         icon: 'jest.svg'
       },
       {
         name: 'Patreon API',
-        icon: 'rest.svg'
+        icon: 'patreon.svg'
       },
       {
         name: 'Stripe API',
-        icon: 'rest.svg'
+        icon: 'stripe.svg'
       },
       {
         name: 'Heroku',
@@ -124,7 +127,8 @@ const data = [
   {
     description: 'Browser simulation of the classic Nintendo series, Advance Wars.',
     title: 'Neowars',
-    tag: 'Web App',
+    logo: 'neowars-icon.svg',
+    tag: 'Web',
     tools: [
       {
         name: 'React',

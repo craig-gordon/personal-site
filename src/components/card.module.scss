@@ -12,27 +12,40 @@
 .bottom {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 50% 1fr auto;
   grid-auto-flow: column;
   line-height: 1.333;
 
-  h3 {
+  .title {
     margin: 0;
-    padding: 16px 16px 0 16px;
+    padding: 12px 12px 6px 12px;
+  }
+
+  h3 {
+    font-weight: bold;
+    padding-right: 4px;
+    padding-bottom: 1px;
+    border-style: solid;
+    border-width: 0 0 4px 0;
+    margin: 0;
+    display: inline;
   }
 
   p {
+    color: rgb(43, 43, 43);
     margin: 0;
-    padding: 16px;
+    padding: 12px;
   }
 
   ul {
-    grid-column: span 2;
     margin: 0;
-    padding: 16px 16px 0 16px;
     list-style-type: none;
     display: flex;
-    flex-wrap: wrap;
+  }
+
+  .tools {
+    padding: 12px 12px 0 14px;
+    grid-column: span 2;
 
     li {
       margin-right: 4px;
@@ -40,9 +53,26 @@
   }
 
   .logo {
-    margin: 0;
-    padding: 16px;
     grid-row: span 2;
+    padding: 12px;
+    height: 100%;
+    max-height: 120px;
+    margin: auto;
+  }
+
+  .links {
+    padding: 14px 12px 0 12px;
+    grid-row: span 2;
+    justify-self: end;
+
+    li {
+      margin-left: 8px;
+      margin-bottom: 0;
+    }
+
+    li:nth-of-type(1) {
+      margin-left: 0;
+    }
   }
 
   .tag {
@@ -50,11 +80,10 @@
     align-self: end;
     color: white;
     font-weight: bold;
-    background-color: rgb(174, 102, 223);
     text-transform: uppercase;
     clip-path: polygon(20px 0%, 100% 0%, 100% 100%, 0% 100%);
     border-radius: 0px 0px 8px;
-    padding: 16px 16px 16px 24px;
+    padding: 12px 12px 12px 24px;
   }
 }
 
