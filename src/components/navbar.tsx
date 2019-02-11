@@ -10,8 +10,9 @@ const NavBar = (props) => (
     <h5 className={`${styles.link} ${styles.two}`}>
       <a href='#portfolio'>Portfolio</a>
     </h5>
-    <h5 className={`${styles.link} ${styles.three}`}>Interests</h5>
-    <h5 className={`${styles.link} ${styles.four}`}>Contact</h5>
+    <h5 className={`${styles.link} ${styles.three}`}>
+      <a href='#contact'>Contact</a>
+    </h5>
   </div>
 );
 

@@ -10,9 +10,7 @@ interface IPropsData {
 
 const Card = ({app, color}: IPropsData) => (
   <div className={styles.card}>
-    <div className={styles.top}>
-      placeholder
-    </div>
+    <div style={{backgroundImage: `url(${app.banner})`}} className={styles.top} />
     <div className={styles.bottom}>
       <div className={styles.title}>
         <h3 style={{borderColor: color}}>{app.title}</h3>

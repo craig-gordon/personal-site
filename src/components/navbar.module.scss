@@ -1,7 +1,7 @@
 .container {
   display: flex;
   justify-content: flex-end;
-  // align-content: center;
+  align-content: center;
   background-color: rgb(8, 29, 68);
   padding-right: 24px;
   position: absolute;
@@ -17,7 +17,7 @@
 .link {
   align-self: center;
   color: rgb(236, 236, 236);
-  padding-bottom: 4px;
+  padding: 4px 0;
   border-bottom: solid 4px transparent;
   font-size: 18px;
   font-weight: normal;
@@ -55,8 +55,4 @@
 
 .three::after {
   background: rgb(199, 233, 180);
-}
-
-.four::after {
-  background: rgb(255, 255, 217);
 }

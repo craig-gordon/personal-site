@@ -3,6 +3,7 @@ const data = [
     description: 'Web platform for the speedrun & high score communities to present the history of the games they play.',
     title: 'Record History',
     logo: 'recordhistory-logo.svg',
+    banner: 'recordhistory-banner.png',
     tag: 'Web',
     tools: [
       {
@@ -48,6 +49,7 @@ const data = [
     image: 'antivanity.gif',
     title: 'Anti-Vanity',
     logo: 'antivanity-logo.svg',
+    banner: 'antivanity-banner.png',
     tag: 'Extension',
     tools: [
       {
@@ -76,6 +78,7 @@ const data = [
     description: 'Emotion analysis platform for video creators, featuring A/B testing tools and a full-featured analytics suite.',
     title: 'Emolytics',
     logo: 'emolytics-icon.svg',
+    banner: 'emolytics-banner.png',
     tag: 'Web',
     tools: [
       {
@@ -128,6 +131,7 @@ const data = [
     description: 'Browser simulation of the classic Nintendo series, Advance Wars.',
     title: 'Neowars',
     logo: 'neowars-icon.svg',
+    banner: 'neowars-banner.png',
     tag: 'Web',
     tools: [
       {
