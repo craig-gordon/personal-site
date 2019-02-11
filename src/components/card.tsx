@@ -18,7 +18,7 @@ const Card = ({data}: IPropsData) => (
       <p>{data.description}</p>
       <ul>{data.tools.map((tool, i) => <li key={i}><img height='24px' src={tool.icon} /></li>)}</ul>
       <div className={styles.logo}>placeholder</div>
-      <div className={styles.tag}>{data.tag}</div>
+      {/* <div className={styles.tag}>{data.tag}</div> */}
     </div>
   </div>
 );

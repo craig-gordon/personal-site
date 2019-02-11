@@ -1,6 +1,6 @@
 const data = [
   {
-    description: 'Platform for the speedrun & highscore communities to present the history of the games they play.',
+    description: 'Web platform for the speedrun & high score communities to present the history of the games they play.',
     title: 'Record History',
     tag: 'Web App',
     tools: [
@@ -47,7 +47,7 @@ const data = [
     ]
   },
   {
-    description: 'Browser extension that prevents vanity searching on popular sites.',
+    description: 'Browser extension that prevents vanity searching on Twitter, Reddit, and other popular sites.',
     image: 'antivanity.gif',
     title: 'Anti-Vanity',
     tag: 'Extension',
@@ -106,10 +106,6 @@ const data = [
       {
         name: 'Jest',
         icon: 'jest.svg'
-      },
-      {
-        name: 'Enzyme',
-        icon: 'enzyme.svg'
       },
       {
         name: 'Patreon API',

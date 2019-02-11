@@ -1,11 +1,21 @@
 .container {
   display: flex;
   justify-content: flex-end;
+  // align-content: center;
   background-color: rgb(8, 29, 68);
-  padding: 24px 40px 0 0;
+  padding-right: 24px;
+  position: absolute;
+  width: 100%;
+  height: 6vh;
+  top: 0;
+}
+
+.fixed {
+  position: fixed !important;
 }
 
 .link {
+  align-self: center;
   color: rgb(236, 236, 236);
   padding-bottom: 4px;
   border-bottom: solid 4px transparent;
@@ -13,9 +23,10 @@
   font-weight: normal;
   margin-left: 30px;
   position: relative;
-  padding-bottom: 5px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 .link::after {
@@ -23,7 +34,7 @@
   position: absolute;
   right: 0px;
   width: 0px;
-  bottom: -5px;
+  bottom: -8px;
   height: 5px;
   transition: width 0.3s ease-out;
 }

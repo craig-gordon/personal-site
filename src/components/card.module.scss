@@ -6,7 +6,7 @@
   border-radius: 8px;
   display: grid;
   height: inherit;
-  grid-template-rows: 3fr 2fr;
+  grid-template-rows: 4fr 3fr;
 }
 
 .bottom {
@@ -18,19 +18,19 @@
 
   h3 {
     margin: 0;
-    padding: 7% 7% 0 7%;
+    padding: 16px 16px 0 16px;
   }
 
   p {
     margin: 0;
-    padding: 7%;
+    padding: 16px;
   }
 
   ul {
+    grid-column: span 2;
     margin: 0;
-    padding: 7%;
+    padding: 16px 16px 0 16px;
     list-style-type: none;
-    margin: 0;
     display: flex;
     flex-wrap: wrap;
 
@@ -41,7 +41,7 @@
 
   .logo {
     margin: 0;
-    padding: 7%;
+    padding: 16px;
     grid-row: span 2;
   }
 
@@ -54,7 +54,7 @@
     text-transform: uppercase;
     clip-path: polygon(20px 0%, 100% 0%, 100% 100%, 0% 100%);
     border-radius: 0px 0px 8px;
-    padding: 7% 7% 7% 24px;
+    padding: 16px 16px 16px 24px;
   }
 }
 
