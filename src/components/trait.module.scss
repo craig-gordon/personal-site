@@ -7,7 +7,7 @@
 .iconWrapper {
   padding: 40px;
   border-radius: 100px;
-  margin-bottom: 1.5em;
+  margin-bottom: 12px;
 }
 
 .one {
@@ -28,4 +28,14 @@
 
 .icon {
 
+}
+
+.label {
+  color: rgb(49, 49, 49);
+  margin-bottom: 12px;
+}
+
+.description {
+  width: 75%;
+  text-align: center;
 }
