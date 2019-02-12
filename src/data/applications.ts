@@ -1,5 +1,58 @@
 const data = [
   {
+    description: 'Emotion analysis platform for video creators, featuring A/B testing tools and a full-featured analytics suite.',
+    title: 'Emolytics',
+    logo: 'emolytics-icon.svg',
+    banner: 'emolytics-banner.png',
+    tag: 'Web',
+    tools: [
+      {
+        name: 'React',
+        icon: 'react.svg'
+      },
+      {
+        name: 'Redux',
+        icon: 'redux.svg'
+      },
+      {
+        name: 'Bootstrap',
+        icon: 'bootstrap.svg'
+      },
+      {
+        name: 'Node',
+        icon: 'node.svg'
+      },
+      {
+        name: 'Express',
+        icon: 'express.svg'
+      },
+      {
+        name: 'PostreSQL',
+        icon: 'postgresql.svg'
+      },
+      {
+        name: 'Sequelize',
+        icon: 'sequelize.svg'
+      },
+      {
+        name: 'Jest',
+        icon: 'jest.svg'
+      },
+      {
+        name: 'Patreon API',
+        icon: 'patreon.svg'
+      },
+      {
+        name: 'Stripe API',
+        icon: 'stripe.svg'
+      },
+      {
+        name: 'Heroku',
+        icon: 'heroku.svg'
+      }
+    ]
+  },
+  {
     description: 'Web platform for the speedrun & high score communities to present the history of the games they play.',
     title: 'Record History',
     logo: 'recordhistory-logo.svg',
@@ -71,59 +124,6 @@ const data = [
       {
         name: 'Regular Expressions',
         icon: 'regex.svg'
-      }
-    ]
-  },
-  {
-    description: 'Emotion analysis platform for video creators, featuring A/B testing tools and a full-featured analytics suite.',
-    title: 'Emolytics',
-    logo: 'emolytics-icon.svg',
-    banner: 'emolytics-banner.png',
-    tag: 'Web',
-    tools: [
-      {
-        name: 'React',
-        icon: 'react.svg'
-      },
-      {
-        name: 'Redux',
-        icon: 'redux.svg'
-      },
-      {
-        name: 'Bootstrap',
-        icon: 'bootstrap.svg'
-      },
-      {
-        name: 'Node',
-        icon: 'node.svg'
-      },
-      {
-        name: 'Express',
-        icon: 'express.svg'
-      },
-      {
-        name: 'PostreSQL',
-        icon: 'postgresql.svg'
-      },
-      {
-        name: 'Sequelize',
-        icon: 'sequelize.svg'
-      },
-      {
-        name: 'Jest',
-        icon: 'jest.svg'
-      },
-      {
-        name: 'Patreon API',
-        icon: 'patreon.svg'
-      },
-      {
-        name: 'Stripe API',
-        icon: 'stripe.svg'
-      },
-      {
-        name: 'Heroku',
-        icon: 'heroku.svg'
       }
     ]
   },
