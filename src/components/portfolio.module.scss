@@ -3,6 +3,7 @@
   background-color: white;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .grid {
@@ -11,5 +12,5 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 30px;
-  margin: 0 3%;
+  margin: 0 3% 10% 3%;
 }

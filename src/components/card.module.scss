@@ -6,7 +6,7 @@
   border-radius: 8px;
   display: grid;
   height: inherit;
-  grid-template-rows: 4fr 3fr;
+  grid-template-rows: 3fr 2fr;
 }
 
 .top {
@@ -52,11 +52,12 @@
   }
 
   .tools {
-    padding: 12px 12px 0 14px;
+    padding-left: 12px;
+    align-content: center;
     grid-column: span 2;
 
     li {
-      margin-right: 4px;
+      margin: auto 4px auto 0;
     }
   }
 

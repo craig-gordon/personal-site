@@ -13,7 +13,7 @@ const Card = ({app, color}: IPropsData) => (
     <div style={{backgroundImage: `url(${app.banner})`}} className={styles.top} />
     <div className={styles.bottom}>
       <div className={styles.title}>
-        <h3 style={{borderColor: color}}>{app.title}</h3>
+        <h3 style={{borderColor: color, paddingRight: app.title === 'Record History' ? '4px' : '0'}}>{app.title}</h3>
       </div>
       <p>{app.description}</p>
       <ul className={styles.tools}>
