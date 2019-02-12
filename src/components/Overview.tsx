@@ -7,10 +7,10 @@ import styles from './overview.module.scss';
 const Overview = (props) => (
   <div className={styles.container}>
     <div className={styles.traitsContainer}>
-      <Trait name='Modern' icon='FaCubes' description='I love creating software using cutting-edge tools with a strong foundation of HTML/CSS/JavaScript.' />
+      <Trait name='Modern' icon='FaCubes' description='I love creating software using cutting-edge tools with a strong foundation of HTML, CSS, and JavaScript.' />
       <Trait name='Intuitive' icon='FaLightbulb' description='The user is king. I design & develop with the end user experience foremost in mind.' />
       <Trait name='Performant' icon='FaRocket' description='From first paint to smooth hover effects, I optimize every step of the user experience.' />
-      <Trait name='Dynamic' icon='FaCogs' description='I harness the power of modern JavaScript + CSS to bring static webpages to life.' />
+      <Trait name='Dynamic' icon='FaCogs' description='I harness the power of contemporary frameworks and design to bring static webpages to life.' />
     </div>
     <div className={styles.bioContainer}>
       <img className={styles.headshot} src='me.png' />

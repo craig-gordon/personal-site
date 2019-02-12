@@ -29,6 +29,10 @@
   margin-block-end: 0;
 }
 
+.current {
+  color: rgb(227, 27, 109);
+}
+
 .link::after {
   content: "";
   position: absolute;
@@ -54,5 +58,5 @@
 }
 
 .three::after {
-  background: rgb(199, 233, 180);
+  background: rgb(169, 198, 153);
 }

@@ -13,13 +13,20 @@ class App extends React.Component {
     super(props);
     this.state = {
       yPos: window.scrollY,
-      navbarFixed: false
+      navbarFixed: false,
+      currentNavItem: 0
     };
+    this.aboutY = null;
+    this.portfolioY = null;
+    this.contactY = null;
     this.checkNavbarState = this.checkNavbarState.bind(this);
   }
 
   componentDidMount() {
     window.addEventListener('scroll', this.checkNavbarState);
+    this.aboutY = Math.floor(document.getElementById('about').getBoundingClientRect().y);
+    this.portfolioY = Math.floor(document.getElementById('portfolio').getBoundingClientRect().y);
+    this.contactY = Math.floor(document.getElementById('contact').getBoundingClientRect().y);
   }
 
   componentWillUnmount() {
@@ -27,11 +34,22 @@ class App extends React.Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
-    console.log('current state:', this.state, 'prev state:', prevState);
+    console.log('Current Y:', this.state.yPos);
+    console.log('About Y:', this.aboutY);
     if (prevState.yPos - this.state.yPos >= 10) {
       this.setState({navbarFixed: true});
     } else if (this.state.yPos > prevState.yPos) {
       this.setState({navbarFixed: false});
+    }
+
+    if (this.state.yPos < this.aboutY && this.state.currentNavItem !== 0) {
+      this.setState({currentNavItem: 0});
+    } else if (this.aboutY <= this.state.yPos && this.state.yPos < this.portfolioY && this.state.currentNavItem !== 1) {
+      this.setState({currentNavItem: 1});
+    } else if (this.portfolioY <= this.state.yPos && this.state.yPos < this.contactY && this.state.currentNavItem !== 2) {
+      this.setState({currentNavItem: 2});
+    } else if (this.contactY <= this.state.yPos && this.state.currentNavItem !== 3) {
+      this.setState({currentNavItem: 3})
     }
   }
 
@@ -42,7 +60,7 @@ class App extends React.Component {
   render() {
     return (
       <Layout>
-        <Navbar fixed={this.state.navbarFixed} />
+        <Navbar fixed={this.state.navbarFixed} current={this.state.currentNavItem} />
         <Landing />
         <SectionBreak color='rgb(255, 255, 217)' bgColor='whitesmoke' />
         <About />
