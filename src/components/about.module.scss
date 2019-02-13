@@ -16,6 +16,7 @@
 .header {
   color: rgb(49, 49, 49);
   grid-column: span 4;
+  margin-bottom: calc(8vh - 2%) !important;
 }
 
 .bioContainer {

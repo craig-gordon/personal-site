@@ -1,0 +1,43 @@
+.highcharts-background {
+  opacity: 0;
+  height: 100%;
+}
+
+.highcharts-title {
+  display: none;
+}
+
+.icon {
+  max-width: unset !important;
+  position: absolute;
+  top: -38px;
+  left: -48px;
+}
+
+.bubble {
+  opacity: 0.8;
+}
+
+.highcharts-color-0 {
+  fill: rgba(255, 127, 127, 0.3);
+  stroke: rgb(255, 127, 127);
+  stroke-width: 2;
+}
+
+.highcharts-color-1 {
+  fill: rgba(69, 255, 40, 0.3);
+  stroke: rgb(69, 255, 40);
+  stroke-width: 2;
+}
+
+.highcharts-color-2 {
+  fill: rgba(66, 134, 244, 0.3);
+  stroke: rgb(66, 134, 244);
+  stroke-width: 2;
+}
+
+.highcharts-color-3 {
+  fill: rgba(130, 130, 130, 0.3);
+  stroke: rgb(130, 130, 130);
+  stroke-width: 2;
+}
