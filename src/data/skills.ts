@@ -2,131 +2,43 @@ const skillsSeries = [
   {
     name: 'Languages',
     data: [
-      {
-        icon: 'javascript.svg',
-        name: 'JavaScript',
-        value: 1000
-      },
-      {
-        icon: 'typescript.svg',
-        name: 'TypeScript',
-        value: 500
-      },
-      {
-        icon: 'html5.svg',
-        name: 'HTML5',
-        value: 750
-      },
-      {
-        icon: 'css3.svg',
-        name: 'CSS3',
-        value: 750
-      },
-      {
-        icon: 'sql.svg',
-        name: 'SQL',
-        value: 700
-      }
+      {name: 'JavaScript', value: 90, color: {pattern: {image: 'javascript.svg'}}},
+      {name: 'TypeScript', value: 50, color: {pattern: {image: 'typescript.svg'}}},
+      {name: 'HTML5', value: 80, color: {pattern: {image: 'html5.svg'}}},
+      {name: 'CSS3', value: 80, color: {pattern: {image: 'css3.svg'}}},
+      {name: 'SQL', value: 70, color: {pattern: {image: 'sql.svg'}}}
     ]
   },
   {
     name: 'Frontend',
     data: [
-      {
-        icon: 'react.svg',
-        name: 'React',
-        value: 1000
-      },
-      {
-        icon: 'jquery.svg',
-        name: 'jQuery',
-        value: 700
-      },
-      {
-        icon: 'redux.svg',
-        name: 'Redux',
-        value: 700
-      },
-      {
-        icon: 'highcharts.svg',
-        name: 'Highcharts',
-        value: 800
-      },
-      {
-        icon: 'sass.svg',
-        name: 'Sass',
-        value: 700
-      },
-      {
-        icon: 'bootstrap.svg',
-        name: 'Bootstrap',
-        value: 700
-      }
+      {name: 'React', value: 90, color: {pattern: {image: 'react.svg'}}},
+      {name: 'jQuery', value: 70, color: {pattern: {image: 'jquery.svg'}}},
+      {name: 'Redux', value: 70, color: {pattern: {image: 'redux.svg'}}},
+      {name: 'Highcharts', value: 80, color: {pattern: {image: 'highcharts.svg'}}},
+      {name: 'Sass', value: 60, color: {pattern: {image: 'sass.svg'}}},
+      {name: 'Bootstrap', value: 70, color: {pattern: {image: 'bootstrap.svg'}}},
     ]
   },
   {
     name: 'Backend',
     data: [
-      {
-        icon: 'node.svg',
-        name: 'Node',
-        value: 900
-      },
-      {
-        icon: 'express.svg',
-        name: 'Express',
-        value: 900
-      },
-      {
-        icon: 'sequelize.svg',
-        name: 'Sequelize',
-        value: 800
-      },
-      {
-        icon: 'mongodb.svg',
-        name: 'MongoDB',
-        value: 600
-      }
+      {name: 'Node', value: 90, color: {pattern: {image: 'node.svg'}}},
+      {name: 'Express', value: 90, color: {pattern: {image: 'express.svg'}}},
+      {name: 'Sequelize', value: 80, color: {pattern: {image: 'sequelize.svg'}}},
+      {name: 'MongoDB', value: 60, color: {pattern: {image: 'mongodb.svg'}}},
     ]
   },
   {
     name: 'Miscellaneous',
     data: [
-      {
-        icon: 'mocha.svg',
-        name: 'Mocha',
-        value: 600
-      },
-      {
-        icon: 'jest.svg',
-        name: 'Jest',
-        value: 700
-      },
-      {
-        icon: 'git.svg',
-        name: 'Git',
-        value: 900
-      },
-      {
-        icon: 'webpack.svg',
-        name: 'Webpack',
-        value: 900
-      },
-      {
-        icon: 'rest.svg',
-        name: 'RESTful APIs',
-        value: 900
-      },
-      {
-        icon: 'chrome.svg',
-        name: 'Chrome APIs',
-        value: 600
-      },
-      {
-        icon: 'gatsby.svg',
-        name: 'GatsbyJS',
-        value: 600
-      }
+      {name: 'Mocha', value: 60, color: {pattern: {image: 'mocha.svg'}}},
+      {name: 'Jest', value: 60, color: {pattern: {image: 'jest.svg'}}},
+      {name: 'Git', value: 80, color: {pattern: {image: 'git.svg'}}},
+      {name: 'Webpack', value: 80, color: {pattern: {image: 'webpack.svg'}}},
+      {name: 'RESTful APIs', value: 90, color: {pattern: {image: 'rest.svg'}}},
+      {name: 'Chrome APIs', value: 60, color: {pattern: {image: 'chrome.svg'}}},
+      {name: 'Gatsby', value: 60, color: {pattern: {image: 'gatsby.svg'}}}
     ]
   }
 ];

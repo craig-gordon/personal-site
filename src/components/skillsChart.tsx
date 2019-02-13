@@ -1,20 +1,23 @@
 import React from 'react';
-import Highcharts from '../utils/highcharts-custom/dist/js/custom.src.js';
+import Highcharts from '../utils/highcharts-custom/dist/custom.src.js';
 import HighchartsReact from 'highcharts-react-official';
-import '../utils/highcharts-custom/dist/css/highcharts.css';
 import './skillsChart.scss';
 
-import skillsSeries from '../data/skills.ts';
+import skillsSeries from '../data/skills';
 
 const options = {
   chart: {
-    height: '100%',
+    height: '90%',
     type: 'packedbubble'
   },
   credits: {
     enabled: false
   },
+  tooltip: {
+    enabled: false
+  },
   legend: {
+    enabled: false,
     itemStyle: {
       fontSize: '16px'
     },
@@ -24,9 +27,9 @@ const options = {
     packedbubble: {
       dataLabels: {
         enabled: true,
-        formatter: function() {
-          return this.point.icon ? `<img height='${this.point.value / 10}px' class='icon' src=${this.point.icon} />` : null;
-        },
+        // formatter: function() {
+        //   return this.point.icon ? `<img height='${80 - (100 - this.point.value)}px' class='icon' src=${this.point.icon} />` : null;
+        // },
         style: {
           color: 'black',
           fontWeight: 'normal',
@@ -79,6 +82,13 @@ const SkillsChart = () => (
   <HighchartsReact
     highcharts={Highcharts}
     options={options}
+    callback={(chart) => {
+      for (let i = 0; i < chart.series.length; i++) {
+        for (let j = 0; j < chart.series[i].data.length; j++) {
+          console.log('point:', chart.series[i].data[j]);
+        }
+      }
+    }}
   />
 );
 
