@@ -1,5 +1,5 @@
 .container {
-  height: 75vh;
+  height: 70vh;
   background-color: rgb(43, 43, 43);
   display: flex;
   flex-direction: column;
@@ -12,8 +12,17 @@
   color: rgb(228, 228, 228);
 }
 
+.logos {
+  display: flex;
+  margin-bottom: 3vh;
+}
+
+.logoWrapper {
+  margin: 0 1em;
+}
+
 .subheader {
-  font-size: 1.2rem;
+  font-size: 1.1em;
   margin-bottom: 3vh;
   color: rgb(227, 27, 109);
 }
@@ -57,10 +66,10 @@
 
   .sendOuter {
     align-self: flex-end;
+    margin-top: 8px;
     padding: 4px;
     border-radius: 4px;
-    background: linear-gradient(60deg, rgba(34, 94, 168, 0.8), rgba(65, 182, 196, 0.8), rgba(169, 198, 153, 0.8), rgba(255, 255, 217, 0.8), rgba(169, 198, 153, 0.8), rgba(65, 182, 196, 0.8), rgba(34, 94, 168, 0.8));
-  }
+    background: linear-gradient(60deg, rgb(34, 94, 168), rgb(65, 182, 196), rgb(169, 198, 153), rgba(255, 255, 217, 0.9), rgb(169, 198, 153), rgb(65, 182, 196), rgb(34, 94, 168));  }
   
   .sendInner {
     background: rgb(26, 26, 26);
@@ -80,4 +89,14 @@
     transition: background-color 0.3s, color 0.3s;
     cursor: pointer;
   }
+}
+
+.topButtonWrapper {
+  display: flex;
+  align-content: center;
+  background-color: rgb(227, 27, 109);
+  padding: 0.75em 0.5em;
+  border-radius: 4px;
+  margin-top: auto;
+  margin-bottom: 3em;
 }

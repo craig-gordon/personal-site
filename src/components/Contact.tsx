@@ -2,11 +2,29 @@ import React from 'react';
 
 import styles from './contact.module.scss';
 
-import { FaPaperPlane } from 'react-icons/fa';
+import { IconContext } from 'react-icons';
+import { FaLinkedinIn, FaGithub, FaScroll, FaPaperPlane, FaAngleDoubleUp } from 'react-icons/fa';
 
 const Contact = () => (
   <div id='contact' className={styles.container}>
     <h1 className={styles.header}>Contact</h1>
+    <div className={styles.logos}>
+      <IconContext.Provider value={{color: 'rgb(249, 249, 249)', className: styles.icon, size: '1.75em'}}>
+        <div className={`${styles.logoWrapper}`}>
+          <FaLinkedinIn />
+        </div>
+      </IconContext.Provider>
+      <IconContext.Provider value={{color: 'rgb(249, 249, 249)', className: styles.icon, size: '1.75em'}}>
+        <div className={`${styles.logoWrapper}`}>
+          <FaGithub />
+        </div>
+      </IconContext.Provider>
+      <IconContext.Provider value={{color: 'rgb(249, 249, 249)', className: styles.icon, size: '1.75em'}}>
+        <div className={`${styles.logoWrapper}`}>
+          <FaScroll />
+        </div>
+      </IconContext.Provider>
+    </div>
     <h3 className={styles.subheader}><span style={{marginRight: '0.5em'}}>Have a question?</span> <span>Want to work together?</span></h3>
     <form className={styles.form}>
       <input className={styles.one} placeholder='Name' />
@@ -19,6 +37,11 @@ const Contact = () => (
         </button>
       </div>
     </form>
+    <IconContext.Provider value={{color: 'rgb(249, 249, 249)', className: styles.icon, size: '2em'}}>
+      <div className={`${styles.topButtonWrapper}`}>
+        <FaAngleDoubleUp />
+      </div>
+    </IconContext.Provider>
   </div>
 );
 
