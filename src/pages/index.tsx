@@ -66,7 +66,7 @@ class App extends React.Component {
         <About />
         <SectionBreak color='whitesmoke' bgColor='white' />
         <Portfolio />
-        <SectionBreak color='white' bgColor='black' />
+        <SectionBreak color='white' bgColor='rgb(43, 43, 43)' />
         <Contact />
       </Layout>
     );
