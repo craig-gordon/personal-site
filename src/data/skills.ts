@@ -17,6 +17,7 @@ const skillsSeries = [
       {name: 'Redux', value: 70, color: {pattern: {image: 'redux.svg'}}},
       {name: 'Highcharts', value: 80, color: {pattern: {image: 'highcharts.svg'}}},
       {name: 'Sass', value: 60, color: {pattern: {image: 'sass.svg'}}},
+      {name: 'Styled-Components', value: 70, color: {pattern: {image: 'styledcomponents.svg'}}},
       {name: 'Bootstrap', value: 70, color: {pattern: {image: 'bootstrap.svg'}}},
     ]
   },

@@ -69,7 +69,7 @@ const data = [
       },
       {
         name: 'Styled-Components',
-        icon: 'styled.svg'
+        icon: 'styledcomponents.svg'
       },
       {
         name: 'Ant Design',
