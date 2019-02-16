@@ -24,9 +24,12 @@ class App extends React.Component {
 
   componentDidMount() {
     window.addEventListener('scroll', this.checkNavbarState);
-    this.aboutY = Math.floor(document.getElementById('about').getBoundingClientRect().y);
-    this.portfolioY = Math.floor(document.getElementById('portfolio').getBoundingClientRect().y);
-    this.contactY = Math.floor(document.getElementById('contact').getBoundingClientRect().y);
+    let aboutRect = document.getElementById('about').getBoundingClientRect();
+    let portfolioRect = document.getElementById('portfolio').getBoundingClientRect();
+    let contactRect = document.getElementById('contact').getBoundingClientRect();
+    this.aboutY = Math.floor(aboutRect.y - (aboutRect.height / 2));
+    this.portfolioY = Math.floor(portfolioRect.y - (portfolioRect.height / 2));
+    this.contactY = Math.floor(contactRect.y - (portfolioRect.height / 2));
   }
 
   componentWillUnmount() {
