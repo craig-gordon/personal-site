@@ -30,21 +30,21 @@ const Contact = () => (
       </IconContext.Provider>
     </div>
     <h3 className={styles.subheader}><span style={{marginRight: '0.5em'}}>Have a question?</span> <span>Want to work together?</span></h3>
-    <form className={styles.form}>
-      <input className={styles.one} placeholder='Name' />
-      <input className={styles.two} placeholder='Email' />
-      <textarea className={styles.three} placeholder='Your message...' rows='5' />
+    <form className={styles.form} action="https://formspree.io/contact@craig-gordon.com" method="POST">
+      <input className={styles.one} placeholder='Name' type='text' name='name' />
+      <input className={styles.two} placeholder='Email' type='email' name='_replyto' />
+      <textarea className={styles.three} placeholder='Your message...' rows='5' type='text' name='message' />
       <div className={styles.sendOuter}>
-        <button className={styles.sendInner}>
+        <button className={styles.sendInner} type='submit' value='Send'>
           <span style={{marginRight: '0.5em'}}>Send</span>
           <FaPaperPlane />
         </button>
       </div>
     </form>
     <IconContext.Provider value={{color: 'rgb(249, 249, 249)', className: styles.icon, size: '2em'}}>
-      <div className={`${styles.topButtonWrapper}`}>
+      <a href='#' className={`${styles.topButtonWrapper}`}>
         <FaAngleDoubleUp />
-      </div>
+      </a>
     </IconContext.Provider>
   </div>
 );

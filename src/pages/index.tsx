@@ -27,8 +27,8 @@ class App extends React.Component {
     let aboutRect = document.getElementById('about').getBoundingClientRect();
     let portfolioRect = document.getElementById('portfolio').getBoundingClientRect();
     let contactRect = document.getElementById('contact').getBoundingClientRect();
-    this.aboutY = Math.floor(aboutRect.y - (aboutRect.height / 2));
-    this.portfolioY = Math.floor(portfolioRect.y - (portfolioRect.height / 2));
+    this.aboutY = Math.floor(aboutRect.y - (aboutRect.height / 2) - 250);
+    this.portfolioY = Math.floor(portfolioRect.y - (portfolioRect.height / 2) - 100);
     this.contactY = Math.floor(contactRect.y - (portfolioRect.height / 2));
   }
 

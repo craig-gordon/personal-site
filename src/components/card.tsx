@@ -21,7 +21,7 @@ const Card = ({app, color}: IPropsData) => (
           <li key={i} title={tool.name}><img height='24px' src={tool.icon} /></li>
         ))}
       </ul>
-      {app.logo ? <img className={styles.logo} src={app.logo} /> : <div className={styles.logo}>placeholder</div>}
+      <img style={{padding: app.title === 'Anti-Vanity' ? '12px 0' : '12px'}} className={styles.logo} src={app.logo} />
       <ul className={styles.links}>
         <li><a href={app.github} target='_blank'><img height='24px' src='github.svg' /></a></li>
         {app.title === 'Emolytics' ? null : <li><a href={app.website} target='_blank'><img height='24px' src='website.svg' /></a></li>}
