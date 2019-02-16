@@ -16,7 +16,10 @@ const About = () => (
       <div className={styles.bioContainer}>
         <img className={styles.headshot} src='me.png' />
         <h4 className={styles.headshotTag}>Playing Mega Man 2 live during AGDQ '18</h4>
-        <p className={styles.blurb}>I create engaging online experiences powered by the latest web technologies. My philosophy in life is to put hard work above all else and never stop improving. In my spare time I am also a world-class speedrunner and Vipassana meditator.</p>
+        <p className={styles.blurb}>I create engaging online experiences powered by the latest web technologies. 
+        My philosophy in life is to put hard work above all else and never stop improving. 
+        In my spare time I am also 
+        a <a href='https://www.ign.com/videos/2018/04/29/mega-man-2-world-record-speedrun-in-26-minutes' target='_blank'>world-class speedrunner</a> and Vipassana meditator.</p>
       </div>
       <div className={styles.chartContainer}>
         <SkillsChart />

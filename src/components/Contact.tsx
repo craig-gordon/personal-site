@@ -10,13 +10,17 @@ const Contact = () => (
     <h1 className={styles.header}>Contact</h1>
     <div className={styles.logos}>
       <IconContext.Provider value={{color: 'rgb(249, 249, 249)', className: styles.icon, size: '1.75em'}}>
-        <div className={`${styles.logoWrapper}`}>
-          <FaLinkedinIn />
-        </div>
+        <a href='https://www.linkedin.com/in/craig-gordon/' target='_blank'>
+          <div className={`${styles.logoWrapper}`}>
+            <FaLinkedinIn />
+          </div>
+        </a>
       </IconContext.Provider>
       <IconContext.Provider value={{color: 'rgb(249, 249, 249)', className: styles.icon, size: '1.75em'}}>
         <div className={`${styles.logoWrapper}`}>
-          <FaGithub />
+          <a href='https://github.com/craig-gordon' target='_blank'>
+            <FaGithub />
+          </a>
         </div>
       </IconContext.Provider>
       <IconContext.Provider value={{color: 'rgb(249, 249, 249)', className: styles.icon, size: '1.75em'}}>

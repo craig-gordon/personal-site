@@ -1,6 +1,8 @@
 const data = [
   {
     description: 'Emotion analysis platform for video creators, featuring A/B testing tools and a full-featured analytics suite.',
+    website: 'http://emolytics.herokuapp.com/',
+    github: 'https://github.com/craig-gordon/emolytics',
     title: 'Emolytics',
     logo: 'emolytics-icon.svg',
     banner: 'emolytics-banner.png',
@@ -55,6 +57,8 @@ const data = [
   {
     description: 'Web platform for the speedrun & high score communities to present the history of the games they play.',
     title: 'Record History',
+    website: 'https://recordhistory.io/',
+    github: 'https://github.com/craig-gordon/wrhistory',
     logo: 'recordhistory-logo.svg',
     banner: 'recordhistory-banner.png',
     tag: 'Web',
@@ -99,8 +103,9 @@ const data = [
   },
   {
     description: 'Browser extension that prevents vanity searching on Twitter, Reddit, and other popular sites.',
-    image: 'antivanity.gif',
     title: 'Anti-Vanity',
+    website: 'https://chrome.google.com/webstore/detail/anti-vanity/opegemmbgaganccilpoflamfeffkcioe',
+    github: 'https://github.com/craig-gordon/anti-vanity',
     logo: 'antivanity-logo.svg',
     banner: 'antivanity-banner.png',
     tag: 'Extension',
@@ -130,6 +135,8 @@ const data = [
   {
     description: 'Browser simulation of the classic Nintendo series, Advance Wars.',
     title: 'Neowars',
+    website: 'https://neowars.herokuapp.com/',
+    github: 'https://github.com/craig-gordon/neowars',
     logo: 'neowars-icon.svg',
     banner: 'neowars-banner.png',
     tag: 'Web',

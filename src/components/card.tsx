@@ -23,8 +23,8 @@ const Card = ({app, color}: IPropsData) => (
       </ul>
       {app.logo ? <img className={styles.logo} src={app.logo} /> : <div className={styles.logo}>placeholder</div>}
       <ul className={styles.links}>
-        <li><img height='24px' src='github.svg' /></li>
-        <li><img height='24px' src='website.svg' /></li>
+        <li><a href={app.github} target='_blank'><img height='24px' src='github.svg' /></a></li>
+        {app.title === 'Emolytics' ? null : <li><a href={app.website} target='_blank'><img height='24px' src='website.svg' /></a></li>}
       </ul>
       <div style={{backgroundColor: color}} className={styles.tag}>{app.tag}</div>
     </div>
