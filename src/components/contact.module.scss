@@ -42,26 +42,15 @@
     border-width: 1px;
     border-style: solid;
     border-radius: 8px;
+    transition: box-shadow 90ms ease-out, border-color 90ms ease-out;
   }
 
   input:focus,
   textarea:focus {
     outline: 0px;
-  }
-
-  .one:focus {
     box-shadow: rgba(34, 94, 168, 0.25) 0px 0px 0px 0.2rem;
     border-color: rgba(34, 94, 168, 0.6);
-  }
-
-  .two:focus {
-    box-shadow: rgba(65, 182, 196, 0.25) 0px 0px 0px 0.2rem;
-    border-color: rgba(65, 182, 196, 0.6);
-  }
-
-  .three:focus {
-    box-shadow: rgba(169, 198, 153, 0.25) 0px 0px 0px 0.2rem;
-    border-color: rgba(169, 198, 153, 0.6);
+    transition: box-shadow 90ms ease-in, border-color 90ms ease-in;
   }
 
   .sendOuter {

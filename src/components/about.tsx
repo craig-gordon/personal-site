@@ -19,7 +19,8 @@ const About = () => (
         <p className={styles.blurb}>I create engaging online experiences powered by the latest web technologies. 
         My philosophy in life is to put hard work above all else and never stop improving. 
         In my spare time I am also 
-        a <a href='https://www.ign.com/videos/2018/04/29/mega-man-2-world-record-speedrun-in-26-minutes' target='_blank'>world-class speedrunner</a> and Vipassana meditator.</p>
+        a <a className={styles.pLink} href='https://www.ign.com/videos/2018/04/29/mega-man-2-world-record-speedrun-in-26-minutes' target='_blank'>world-class speedrunner</a> and 
+        Vipassana meditator.</p>
       </div>
       <div className={styles.chartContainer}>
         <SkillsChart />

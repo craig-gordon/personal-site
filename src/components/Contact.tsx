@@ -31,9 +31,9 @@ const Contact = () => (
     </div>
     <h3 className={styles.subheader}><span style={{marginRight: '0.5em'}}>Have a question?</span> <span>Want to work together?</span></h3>
     <form className={styles.form} action="https://formspree.io/contact@craig-gordon.com" method="POST">
-      <input className={styles.one} placeholder='Name' type='text' name='name' />
-      <input className={styles.two} placeholder='Email' type='email' name='_replyto' />
-      <textarea className={styles.three} placeholder='Your message...' rows='5' type='text' name='message' />
+      <input placeholder='Name' type='text' name='name' />
+      <input placeholder='Email' type='email' name='_replyto' />
+      <textarea placeholder='Your message...' rows='5' type='text' name='message' />
       <div className={styles.sendOuter}>
         <button className={styles.sendInner} type='submit' value='Send'>
           <span style={{marginRight: '0.5em'}}>Send</span>

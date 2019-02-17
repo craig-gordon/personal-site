@@ -46,6 +46,14 @@
   text-align: center;
 }
 
+.pLink {
+  font-weight: 700;
+}
+
+.pLink:hover {
+  text-decoration: underline;
+}
+
 .chartContainer {
   grid-column: span 2;
   justify-content: center;
