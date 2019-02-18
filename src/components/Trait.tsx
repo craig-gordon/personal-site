@@ -37,7 +37,7 @@ const iconMap = {
 };
 
 const Trait = (props) => (
-  <div className={styles.container}>
+  <div className={`${styles.container} hidden`}>
     {iconMap[props.icon]}
     <h2 className={styles.label}>{props.name}</h2>
     <div className={styles.description}>{props.description}</div>

@@ -16,7 +16,7 @@ const About = () => (
       <Trait name='Intuitive' icon='FaLightbulb' description='The user is king. I design & develop with the end user experience foremost in mind.' />
       <Trait name='Performant' icon='FaRocket' description='From first paint to smooth UI effects, I optimize every step of the user experience.' />
       <Trait name='Dynamic' icon='FaCogs' description='I harness the power of contemporary frameworks and design to bring static webpages to life.' />
-      <div className={styles.bioContainer}>
+      <div className={`${styles.bioContainer} hidden`}>
         <img className={styles.headshot} src='me.png' />
         <h4 className={styles.headshotTag}>Playing Mega Man 2 live during AGDQ '18</h4>
         <p className={styles.blurb}>I create engaging online experiences powered by the latest web technologies. 
@@ -25,7 +25,7 @@ const About = () => (
         a <a className={styles.pLink} href='https://www.ign.com/videos/2018/04/29/mega-man-2-world-record-speedrun-in-26-minutes' target='_blank'>world-class speedrunner</a> and 
         Vipassana meditator.</p>
       </div>
-      <div className={styles.chartContainer}>
+      <div className={`${styles.chartContainer} hidden`}>
         <SkillsChart />
       </div>
     </div>

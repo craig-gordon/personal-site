@@ -24,11 +24,16 @@
   align-items: center;
 }
 
-.header > :global(.section-header),
-.header > .headerUnderline {
+.header > :global(.section-header) {
   transform: translateX(0);
   opacity: 1;
   transition: transform 500ms ease, opacity 500ms ease;
+}
+
+.header > .headerUnderline {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 500ms ease 100ms, opacity 500ms ease 200ms;
 }
 
 .header > :global(.hidden) {
@@ -48,6 +53,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: transform 500ms ease, opacity 500ms ease;
+}
+
+.bioContainer:global(.hidden) {
+  transform: translateX(-10vw);
+  opacity: 0;
 }
 
 .headshot {
@@ -78,4 +89,10 @@
 .chartContainer {
   grid-column: span 2;
   justify-content: center;
+  transition: transform 500ms ease, opacity 500ms ease;
+}
+
+.chartContainer:global(.hidden) {
+  transform: translateX(10vw);
+  opacity: 0;
 }

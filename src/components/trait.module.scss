@@ -8,22 +8,32 @@
   padding: 40px;
   border-radius: 50%;
   margin-bottom: 12px;
+  opacity: 1;
+}
+
+.container:global(.hidden) > .iconWrapper {
+  transform: translateX(-10vw) rotate(-359deg);
+  opacity: 0;
 }
 
 .one {
   background-color: rgb(8, 29, 68);
+  transition: transform 950ms ease, opacity 950ms ease;
 }
 
 .two {
   background-color: rgb(34, 94, 168);
+  transition: transform 950ms ease 100ms, opacity 950ms ease 100ms;
 }
 
 .three {
   background-color: rgb(65, 182, 196);
+  transition: transform 950ms ease 200ms, opacity 950ms ease 200ms;
 }
 
 .four {
   background-color: rgb(169, 198, 153);
+  transition: transform 950ms ease 400ms, opacity 950ms ease 400ms;
 }
 
 .icon {
@@ -41,3 +51,30 @@
   width: 75%;
   text-align: center;
 }
+
+.container:global(.hidden) > .label,
+.container:global(.hidden) > .description {
+  transform: translateY(3vh);
+  opacity: 0;
+}
+
+.one ~ .label,
+.one ~ .description {
+  transition: transform 500ms ease 600ms, opacity 500ms ease 600ms;
+}
+
+.two ~ .label,
+.two ~ .description {
+  transition: transform 500ms ease 700ms, opacity 500ms ease 700ms;
+}
+
+.three ~ .label,
+.three ~ .description {
+  transition: transform 500ms ease 800ms, opacity 500ms ease 800ms;
+}
+
+.four ~ .label,
+.four ~ .description {
+  transition: transform 500ms ease 900ms, opacity 500ms ease 900ms;
+}
+
