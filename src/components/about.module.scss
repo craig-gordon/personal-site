@@ -33,7 +33,7 @@
 .header > .headerUnderline {
   transform: translateX(0);
   opacity: 1;
-  transition: transform 500ms ease 100ms, opacity 500ms ease 200ms;
+  transition: transform 500ms ease 250ms, opacity 500ms ease 250ms;
 }
 
 .header > :global(.hidden) {

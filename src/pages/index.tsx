@@ -61,8 +61,14 @@ class App extends React.Component {
     let elems = document.getElementsByClassName('hidden');
     Array.from(elems).forEach((elem) => {
       let elemY = elem.getBoundingClientRect().top;
-      if (this.state.yPos + this.viewportHeight > elemY + (this.viewportHeight * 0.5)) {
+      if (this.state.yPos + this.viewportHeight > elemY + (this.viewportHeight * 0.75)) {
         elem.classList.remove('hidden');
+        setTimeout(function() {
+          elem.classList.remove('c1');
+          elem.classList.remove('c2');
+          elem.classList.remove('c3');
+          elem.classList.remove('c4');
+        }, 250);
       }
     });
   }

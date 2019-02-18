@@ -23,6 +23,23 @@
   align-items: center;
 }
 
+.header > :global(.section-header) {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 500ms ease, opacity 500ms ease;
+}
+
+.header > .headerUnderline {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 500ms ease 250ms, opacity 500ms ease 250ms;
+}
+
+.header > :global(.hidden) {
+  transform: translateX(10vw);
+  opacity: 0;
+}
+
 .headerUnderline {
   width: 10em;
   height: 5px;

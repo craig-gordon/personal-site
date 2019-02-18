@@ -8,8 +8,8 @@ interface IPropsData {
   tag: string;
 };
 
-const Card = ({app, color}: IPropsData) => (
-  <div className={styles.card}>
+const Card = ({num, app, color}: IPropsData) => (
+  <div className={`${styles.card} c${num} hidden`}>
     <div style={{backgroundImage: `url(${app.banner})`}} className={styles.top} />
     <div className={styles.bottom}>
       <div className={styles.title}>

@@ -13,7 +13,42 @@
 .card:hover {
   transform: translateY(-10px);
   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 16px;
-  // transition: transform 250ms;
+}
+
+:global(.c1) {
+  transition: transform 900ms ease 300ms, opacity 900ms ease 300ms;
+}
+
+:global(.c2) {
+  transition: transform 900ms ease 200ms, opacity 900ms ease 200ms;
+}
+
+:global(.c3) {
+  transition: transform 900ms ease 100ms, opacity 900ms ease 100ms;
+}
+
+:global(.c4) {
+  transition: transform 900ms ease, opacity 900ms ease;
+}
+
+:global(.c1):global(.hidden) {
+  transform: translate(30vw, 40vh) scale(0.25, 0.25);
+  opacity: 0;
+}
+
+:global(.c2):global(.hidden) {
+  transform: translate(10vw, 40vh) scale(0.25, 0.25);
+  opacity: 0;
+}
+
+:global(.c3):global(.hidden) {
+  transform: translate(-10vw, 40vh) scale(0.25, 0.25);
+  opacity: 0;
+}
+
+:global(.c4):global(.hidden) {
+  transform: translate(-30vw, 40vh) scale(0.25, 0.25);
+  opacity: 0;
 }
 
 .top {
