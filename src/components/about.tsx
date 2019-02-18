@@ -8,7 +8,10 @@ import styles from './about.module.scss';
 const About = () => (
   <div id='about' className={styles.container}>
     <div className={styles.grid}>
-      <h1 className={`section-header ${styles.header}`}>About</h1>
+      <div className={styles.header}>
+        <h1 className='section-header'>ABOUT</h1>
+        <div className={styles.headerUnderline} />
+      </div>
       <Trait name='Modern' icon='FaCubes' description='I create software using cutting-edge tools with a strong foundation of HTML, CSS, and JavaScript.' />
       <Trait name='Intuitive' icon='FaLightbulb' description='The user is king. I design & develop with the end user experience foremost in mind.' />
       <Trait name='Performant' icon='FaRocket' description='From first paint to smooth UI effects, I optimize every step of the user experience.' />

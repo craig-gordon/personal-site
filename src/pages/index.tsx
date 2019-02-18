@@ -65,11 +65,11 @@ class App extends React.Component {
       <Layout>
         <Navbar fixed={this.state.navbarFixed} current={this.state.currentNavItem} />
         <Landing />
-        <SectionBreak color='rgb(255, 255, 217)' bgColor='whitesmoke' />
+        <SectionBreak color='rgb(255, 255, 217)' bgColor='rgb(234, 234, 234)' />
         <About />
-        <SectionBreak color='whitesmoke' bgColor='white' />
+        <SectionBreak color='rgb(234, 234, 234)' bgColor='rgb(248, 248, 248)' />
         <Portfolio />
-        <SectionBreak color='white' bgColor='rgb(43, 43, 43)' />
+        <SectionBreak color='rgb(248, 248, 248)' bgColor='rgb(43, 43, 43)' />
         <Contact />
       </Layout>
     );

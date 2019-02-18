@@ -7,7 +7,10 @@ import { FaLinkedinIn, FaGithub, FaScroll, FaPaperPlane, FaAngleDoubleUp } from 
 
 const Contact = () => (
   <div id='contact' className={styles.container}>
-    <h1 className={styles.header}>Contact</h1>
+    <div className={styles.header}>
+      <h1 className='section-header' style={{color: 'rgb(228, 228, 228)'}}>CONTACT</h1>
+      <div className={styles.headerUnderline} />
+    </div>
     <div className={styles.logos}>
       <IconContext.Provider value={{color: 'rgb(249, 249, 249)', className: styles.icon, size: '1.75em'}}>
         <a href='https://www.linkedin.com/in/craig-gordon/' target='_blank'>
