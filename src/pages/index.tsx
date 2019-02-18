@@ -16,6 +16,7 @@ class App extends React.Component {
       navbarFixed: false,
       currentNavItem: 0
     };
+    this.viewportHeight = window.innerHeight;
     this.aboutY = null;
     this.portfolioY = null;
     this.contactY = null;
@@ -23,6 +24,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
+    console.log('body:', document.body.getBoundingClientRect());
     window.addEventListener('scroll', this.checkNavbarState);
     let aboutRect = document.getElementById('about').getBoundingClientRect();
     let portfolioRect = document.getElementById('portfolio').getBoundingClientRect();
@@ -37,14 +39,14 @@ class App extends React.Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
-    console.log('Current Y:', this.state.yPos);
-    console.log('About Y:', this.aboutY);
+    // Toggle Navbar visibility
     if (prevState.yPos - this.state.yPos >= 10) {
       this.setState({navbarFixed: true});
     } else if (this.state.yPos > prevState.yPos) {
       this.setState({navbarFixed: false});
     }
 
+    // Toggle which navbar item is colored pink
     if (this.state.yPos < this.aboutY && this.state.currentNavItem !== 0) {
       this.setState({currentNavItem: 0});
     } else if (this.aboutY <= this.state.yPos && this.state.yPos < this.portfolioY && this.state.currentNavItem !== 1) {
@@ -54,6 +56,15 @@ class App extends React.Component {
     } else if (this.contactY <= this.state.yPos && this.state.currentNavItem !== 3) {
       this.setState({currentNavItem: 3})
     }
+
+    // Handle animations for elements scrolled on-screen
+    let elems = document.getElementsByClassName('hidden');
+    Array.from(elems).forEach((elem) => {
+      let elemY = elem.getBoundingClientRect().top;
+      if (this.state.yPos + this.viewportHeight > elemY + (this.viewportHeight * 0.5)) {
+        elem.classList.remove('hidden');
+      }
+    });
   }
 
   checkNavbarState() {
@@ -65,9 +76,9 @@ class App extends React.Component {
       <Layout>
         <Navbar fixed={this.state.navbarFixed} current={this.state.currentNavItem} />
         <Landing />
-        <SectionBreak color='rgb(255, 255, 217)' bgColor='rgb(234, 234, 234)' />
+        <SectionBreak color='rgb(255, 255, 217)' bgColor='rgb(240, 240, 240)' />
         <About />
-        <SectionBreak color='rgb(234, 234, 234)' bgColor='rgb(248, 248, 248)' />
+        <SectionBreak color='rgb(240, 240, 240)' bgColor='rgb(248, 248, 248)' />
         <Portfolio />
         <SectionBreak color='rgb(248, 248, 248)' bgColor='rgb(43, 43, 43)' />
         <Contact />

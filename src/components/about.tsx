@@ -9,8 +9,8 @@ const About = () => (
   <div id='about' className={styles.container}>
     <div className={styles.grid}>
       <div className={styles.header}>
-        <h1 className='section-header'>ABOUT</h1>
-        <div className={styles.headerUnderline} />
+        <h1 className='section-header hidden'>ABOUT</h1>
+        <div className={`${styles.headerUnderline} hidden`} />
       </div>
       <Trait name='Modern' icon='FaCubes' description='I create software using cutting-edge tools with a strong foundation of HTML, CSS, and JavaScript.' />
       <Trait name='Intuitive' icon='FaLightbulb' description='The user is king. I design & develop with the end user experience foremost in mind.' />
