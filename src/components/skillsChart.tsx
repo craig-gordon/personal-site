@@ -14,7 +14,9 @@ const options = {
     enabled: false
   },
   tooltip: {
-    enabled: false
+    enabled: true,
+    headerFormat: null,
+    pointFormat: '<b>{point.name}</b>'
   },
   legend: {
     enabled: false,
@@ -26,21 +28,17 @@ const options = {
   plotOptions: {
     packedbubble: {
       dataLabels: {
-        enabled: true,
-        // formatter: function() {
-        //   return this.point.icon ? `<img height='${80 - (100 - this.point.value)}px' class='icon' src=${this.point.icon} />` : null;
-        // },
-        style: {
-          color: 'black',
-          fontWeight: 'normal',
-          textOutline: 'none'
-        },
-        useHTML: true
+        enabled: false
       },
       maxSize: '100%',
       minSize: '50%'
     },
     series: {
+      states: {
+        hover: {
+          halo: false
+        }
+      },
       events: {
         legendItemClick: function(event) {
           if (!this.visible) {
