@@ -20,6 +20,21 @@
   background: rgb(228, 228, 228);
 }
 
+.header > :global(.section-header) {
+  opacity: 1;
+  transition: transform 500ms ease, opacity 500ms ease;
+}
+
+.header > .headerUnderline {
+  opacity: 1;
+  transition: transform 500ms ease 150ms, opacity 500ms ease 150ms;
+}
+
+.header > :global(.hidden) {
+  transform: translateY(10vh);
+  opacity: 0;
+}
+
 .logos {
   display: flex;
   margin-bottom: 3vh;
@@ -29,16 +44,57 @@
   margin: 0 1em;
 }
 
+.icon {
+  fill: rgb(214, 214, 214);
+  transition: transform 250ms ease, fill 250ms ease, opacity 500ms ease 500ms;
+}
+
+.icon:global(.hidden) {
+  opacity: 0;
+}
+
+.icon:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.one:hover {
+  fill: rgb(34, 94, 168)
+}
+
+.two:hover {
+  fill: rgb(65, 182, 196);
+}
+
+.three:hover {
+  fill: rgb(169, 198, 153);
+}
+
 .subheader {
   font-size: 1.1em;
   margin-bottom: 3vh;
   color: rgb(227, 27, 109);
+
+  span {
+    display: inline-block;
+    transition: transform 500ms ease 750ms, opacity 500ms ease 750ms;
+  }
+}
+
+.subheaderLeft:global(.hidden) {
+  opacity: 0;
+  transform: translateX(-10vw);
+}
+
+.subheaderRight:global(.hidden) {
+  opacity: 0;
+  transform: translateX(10vw);
 }
 
 .form {
   display: flex;
   flex-direction: column;
   width: 500px;
+  transition: transform 750ms cubic-bezier(.19,.74,.65,1.25) 1000ms;
 
   input,
   textarea {
@@ -88,12 +144,69 @@
   }
 }
 
-.topButtonWrapper {
+.form:global(.hidden) {
+  opacity: 0;
+  transform: scale(0.01, 0.01);
+}
+
+.pageBottomContainer {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   align-content: center;
+  margin-top: auto;
+
+  h6 {
+    opacity: 0.75;
+  }
+}
+
+.topButtonWrapper {
   background-color: rgb(227, 27, 109);
   padding: 0.75em 0.5em;
   border-radius: 4px;
-  margin-top: auto;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
+  overflow: hidden;
+  transition: transform 250ms ease;
+}
+
+.topButtonWrapper:hover {
+  transform: translateY(-0.25em);
+}
+
+.topIcon {
+  color: initial;
+}
+
+:global(.animated) {
+  animation-name: flashUp;
+  animation-duration: 750ms;
+  animation-timing-function: steps(1, start);
+  animation-delay: 150ms;
+  animation-iteration-count: infinite;
+}
+
+@keyframes flashUp {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-1em);
+  }
+  40% {
+    transform: translateY(-2.1em);
+  }
+  60% {
+    transform: translateY(2.1em);
+  }
+  80% {
+    transform: translateY(1em);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.copyright {
+  color: rgb(65, 182, 196);
 }

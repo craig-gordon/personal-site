@@ -15,7 +15,7 @@ const colors = [
 const Portfolio = () => (
   <div id='portfolio' className={styles.container}>
     <div className={styles.header}>
-      <h1 className='section-header hidden'>APPLICATIONS</h1>
+      <h1 className='section-header hidden'>PORTFOLIO</h1>
       <div className={`${styles.headerUnderline} hidden`}/>
     </div>
     <div className={styles.grid}>

@@ -16,7 +16,7 @@ class App extends React.Component {
       navbarFixed: false,
       currentNavItem: 0
     };
-    this.viewportHeight = window.innerHeight;
+    this.viewportHeight = null;
     this.aboutY = null;
     this.portfolioY = null;
     this.contactY = null;
@@ -24,11 +24,12 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    console.log('body:', document.body.getBoundingClientRect());
+    console.log('window.innerHeight:', window.innerHeight);
     window.addEventListener('scroll', this.checkNavbarState);
     let aboutRect = document.getElementById('about').getBoundingClientRect();
     let portfolioRect = document.getElementById('portfolio').getBoundingClientRect();
     let contactRect = document.getElementById('contact').getBoundingClientRect();
+    this.viewportHeight = window.innerHeight;
     this.aboutY = Math.floor(aboutRect.y - (aboutRect.height / 2) - 250);
     this.portfolioY = Math.floor(portfolioRect.y - (portfolioRect.height / 2) - 100);
     this.contactY = Math.floor(contactRect.y - (portfolioRect.height / 2));
@@ -60,15 +61,24 @@ class App extends React.Component {
     // Handle animations for elements scrolled on-screen
     let elems = document.getElementsByClassName('hidden');
     Array.from(elems).forEach((elem) => {
-      let elemY = elem.getBoundingClientRect().top;
-      if (this.state.yPos + this.viewportHeight > elemY + (this.viewportHeight * 0.75)) {
+      let elemRect = elem.getBoundingClientRect();
+      let elemY = elemRect.top + (elemRect.height / 2) + window.scrollY;
+      if (elem.classList.contains('c1') || elem.classList.contains('c2') || elem.classList.contains('c3') || elem.classList.contains('c4')) {
+        elemY = elemY - (this.viewportHeight * 0.4);
+      } else if (elem.classList.contains('transform-down')) {
+        elemY = elemY - (this.viewportHeight * 0.1);
+      }
+      if (this.state.yPos + this.viewportHeight > elemY + (this.viewportHeight * 0.1)) {
+        console.log('elem:', elem);
+        console.log('Current Screen Bottom Y:', this.state.yPos + this.viewportHeight);
+        console.log('Element Trigger Y:', elemY + (this.viewportHeight * 0.1));
         elem.classList.remove('hidden');
         setTimeout(function() {
           elem.classList.remove('c1');
           elem.classList.remove('c2');
           elem.classList.remove('c3');
           elem.classList.remove('c4');
-        }, 250);
+        }, 50);
       }
     });
   }
