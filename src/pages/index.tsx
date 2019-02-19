@@ -62,7 +62,7 @@ class App extends React.Component {
     let elems = document.getElementsByClassName('hidden');
     Array.from(elems).forEach((elem) => {
       let elemRect = elem.getBoundingClientRect();
-      let elemY = elemRect.top + (elemRect.height / 2) + window.scrollY;
+      let elemY = elemRect.top + window.scrollY;
       if (elem.classList.contains('c1') || elem.classList.contains('c2') || elem.classList.contains('c3') || elem.classList.contains('c4')) {
         elemY = elemY - (this.viewportHeight * 0.4);
       } else if (elem.classList.contains('transform-down')) {

@@ -2,7 +2,7 @@
   display: flex;
   justify-content: flex-end;
   align-content: center;
-  background-color: rgb(8, 29, 68);
+  background: linear-gradient(to bottom, rgb(8, 29, 68), rgba(8, 29, 68, 0.85));
   padding-right: 30px;
   position: absolute;
   width: 100%;
@@ -20,9 +20,36 @@
   }
 }
 
-.fixed {
+:global(.fixed) {
   position: fixed !important;
   z-index: 10;
+  animation: pullDown 250ms linear both;
+}
+
+@keyframes pullDown {
+  from {
+    opacity: 0;
+    transform: translateY(-6vh);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+:global(.remove) {
+  animation: pullUp 250ms linear both;
+}
+
+@keyframes pullUp {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-6vh);
+  }
 }
 
 .link {
