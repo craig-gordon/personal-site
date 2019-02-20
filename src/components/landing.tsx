@@ -60,6 +60,7 @@ class Landing extends React.Component {
       }
     
       document.getElementById('row' + rowIndex).style.backgroundImage = 'url(data:image/gif;base64,' + png.getBase64() + ')';
+      document.getElementsByClassName('below-parallax')[0].setAttribute('style', 'background-color:rgb(255, 255, 217)');
     }
   }
   
@@ -81,6 +82,7 @@ class Landing extends React.Component {
         <div className='parallax-wrapper'>
           {this.parallaxDivs}
         </div>
+        <div className='below-parallax' />
       </div>
     );
   }
