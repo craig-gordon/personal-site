@@ -14,7 +14,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      yPos: window.scrollY,
+      yPos: null,
       navbarFixed: false,
       currentNavItem: 0
     };
@@ -26,6 +26,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
+    this.setState({yPos: window.scrollY});
     window.addEventListener('scroll', this.updateYPosition);
     let aboutRect = document.getElementById('about').getBoundingClientRect();
     let portfolioRect = document.getElementById('portfolio').getBoundingClientRect();
