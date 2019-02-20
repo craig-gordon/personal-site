@@ -8,6 +8,8 @@ import Portfolio from '../components/Portfolio';
 import SectionBreak from '../components/SectionBreak';
 import Contact from '../components/Contact';
 
+import throttle from 'lodash/throttle';
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -20,12 +22,11 @@ class App extends React.Component {
     this.aboutY = null;
     this.portfolioY = null;
     this.contactY = null;
-    this.checkNavbarState = this.checkNavbarState.bind(this);
+    this.updateYPosition = throttle(this.updateYPosition.bind(this), 200);
   }
 
   componentDidMount() {
-    console.log('window.innerHeight:', window.innerHeight);
-    window.addEventListener('scroll', this.checkNavbarState);
+    window.addEventListener('scroll', this.updateYPosition);
     let aboutRect = document.getElementById('about').getBoundingClientRect();
     let portfolioRect = document.getElementById('portfolio').getBoundingClientRect();
     let contactRect = document.getElementById('contact').getBoundingClientRect();
@@ -36,7 +37,7 @@ class App extends React.Component {
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.checkNavbarState);
+    window.removeEventListener('scroll', this.updateYPosition);
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -59,8 +60,7 @@ class App extends React.Component {
     }
 
     // Handle animations for elements scrolled on-screen
-    let elems = document.getElementsByClassName('hidden');
-    Array.from(elems).forEach((elem) => {
+    Array.from(document.getElementsByClassName('hidden')).forEach((elem, i) => {
       let elemRect = elem.getBoundingClientRect();
       let elemY = elemRect.top + window.scrollY;
       if (elem.classList.contains('c1') || elem.classList.contains('c2') || elem.classList.contains('c3') || elem.classList.contains('c4')) {
@@ -69,9 +69,6 @@ class App extends React.Component {
         elemY = elemY - (this.viewportHeight * 0.1);
       }
       if (this.state.yPos + this.viewportHeight > elemY + (this.viewportHeight * 0.1)) {
-        console.log('elem:', elem);
-        console.log('Current Screen Bottom Y:', this.state.yPos + this.viewportHeight);
-        console.log('Element Trigger Y:', elemY + (this.viewportHeight * 0.1));
         elem.classList.remove('hidden');
         setTimeout(function() {
           elem.classList.remove('c1');
@@ -81,9 +78,10 @@ class App extends React.Component {
         }, 50);
       }
     });
+
   }
 
-  checkNavbarState() {
+  updateYPosition() {
     this.setState({yPos: window.scrollY});
   }
 

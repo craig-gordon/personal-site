@@ -32,22 +32,22 @@
 }
 
 :global(.c1):global(.hidden) {
-  transform: translate(30vw, 40vh) scale(0.25, 0.25);
+  transform: translate(30vw, 40vh) scale(0.1, 0.1);
   opacity: 0;
 }
 
 :global(.c2):global(.hidden) {
-  transform: translate(10vw, 40vh) scale(0.25, 0.25);
+  transform: translate(10vw, 40vh) scale(0.1, 0.1);
   opacity: 0;
 }
 
 :global(.c3):global(.hidden) {
-  transform: translate(-10vw, 40vh) scale(0.25, 0.25);
+  transform: translate(-10vw, 40vh) scale(0.1, 0.1);
   opacity: 0;
 }
 
 :global(.c4):global(.hidden) {
-  transform: translate(-30vw, 40vh) scale(0.25, 0.25);
+  transform: translate(-30vw, 40vh) scale(0.1, 0.1);
   opacity: 0;
 }
 
