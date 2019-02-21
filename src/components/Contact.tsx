@@ -48,7 +48,7 @@ class Contact extends React.Component {
             </div>
           </IconContext.Provider>
           <IconContext.Provider value={{color: 'rgb(249, 249, 249)', className: `${styles.icon} ${styles.three} hidden`, size: '1.75em'}}>
-            <div className={`${styles.logoWrapper}`} onClick={this.showResume}>
+            <div className={`${styles.logoWrapper}`} onClick={this.showResume} title='Resume'>
               <FaScroll />
             </div>
           </IconContext.Provider>

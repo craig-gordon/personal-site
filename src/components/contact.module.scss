@@ -50,7 +50,7 @@
 
 .icon {
   fill: rgb(214, 214, 214);
-  transition: transform 250ms ease, fill 250ms ease, opacity 500ms ease 500ms;
+  transition: transform 250ms ease, fill 250ms ease, opacity 500ms ease 250ms;
 }
 
 .icon:global(.hidden) {
@@ -81,7 +81,7 @@
 
   span {
     display: inline-block;
-    transition: transform 500ms ease 750ms, opacity 500ms ease 750ms;
+    transition: transform 500ms ease 350ms, opacity 500ms ease 350ms;
   }
 }
 
@@ -100,7 +100,7 @@
   flex-direction: column;
   width: 35vw;
   min-width: 300px;
-  transition: transform 750ms cubic-bezier(.19,.74,.65,1.25) 1000ms;
+  transition: transform 750ms cubic-bezier(.19,.74,.65,1.25) 500ms;
 
   input,
   textarea {
