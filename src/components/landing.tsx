@@ -1,8 +1,6 @@
 import React from 'react';
 import './landing.scss';
 
-import Navbar from './Navbar';
-
 import { FaPaperPlane } from 'react-icons/fa';
 
 import PNGlib from 'pnglib';
@@ -41,7 +39,7 @@ class Landing extends React.Component {
       }
     };
     
-    const pixelSize = 5;
+    const pixelSize = 4;
     const pngWidth = 500;
     const numberOfRows = 50;
     

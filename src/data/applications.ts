@@ -45,10 +45,6 @@ const data = [
         icon: 'patreon.svg'
       },
       {
-        name: 'Stripe API',
-        icon: 'stripe.svg'
-      },
-      {
         name: 'Heroku',
         icon: 'heroku.svg'
       }

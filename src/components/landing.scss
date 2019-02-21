@@ -8,10 +8,10 @@
   align-content: center;
   justify-items: center;
   justify-content: center;
-  height: calc(98vh - 250px);
+  height: calc(98vh - 200px);
 
   h1 {
-    font-size: 42px;
+    font-size: 2.5em;
   }
 }
 
@@ -78,7 +78,7 @@
 }
 
 .header-button {
-  padding: 6px;
+  padding: 0.35em;
   border-radius: 4px;
   background: linear-gradient(60deg, rgb(34, 94, 168), rgb(65, 182, 196), rgb(169, 198, 153), rgba(255, 255, 217, 0.9), rgb(169, 198, 153), rgb(65, 182, 196), rgb(34, 94, 168));
   animation: slideUp 400ms ease 1400ms both;
@@ -88,9 +88,9 @@
   background: rgb(5, 18, 41);
   color: rgb(228, 228, 228);
   font-weight: bold;
-  padding: 12px 20px;
+  padding: 0.7em 1em;
   border-radius: 4px;
-  font-size: 20px;
+  font-size: 1.1em;
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -115,7 +115,7 @@
 .parallax-row {
   width: 100%;
   background-repeat: repeat;
-  height: 5px;
+  height: 4px;
 }
 
 @for $i from 0 through 49 {

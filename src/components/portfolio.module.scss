@@ -4,15 +4,16 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .grid {
-  height: 50vh;
+  height: 32em;
   justify-self: center;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 30px;
-  margin: 0 3% 10% 3%;
+  grid-gap: 2vw;
+  margin: 0 2vw 5vh 2vw;
 }
 
 .header {

@@ -1,5 +1,5 @@
 .container {
-  height: 70vh;
+  height: 80vh;
   background-color: rgb(43, 43, 43);
   display: flex;
   flex-direction: column;
@@ -8,7 +8,7 @@
 
 .header {
   color: rgb(228, 228, 228);
-  margin: 5vh 0;
+  margin: 3em 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,7 +37,7 @@
 
 .logos {
   display: flex;
-  margin-bottom: 3vh;
+  margin-bottom: 1.5em;
 }
 
 .logoWrapper {
@@ -99,7 +99,8 @@
 .form {
   display: flex;
   flex-direction: column;
-  width: 500px;
+  width: 35vw;
+  min-width: 300px;
   transition: transform 750ms cubic-bezier(.19,.74,.65,1.25) 1000ms;
 
   input,
@@ -126,7 +127,7 @@
   .sendOuter {
     align-self: flex-end;
     margin-top: 8px;
-    padding: 4px;
+    padding: 0.3em;
     border-radius: 4px;
     background: linear-gradient(60deg, rgb(34, 94, 168), rgb(65, 182, 196), rgb(169, 198, 153), rgba(255, 255, 217, 0.9), rgb(169, 198, 153), rgb(65, 182, 196), rgb(34, 94, 168));  }
   
@@ -134,11 +135,10 @@
     background: rgb(26, 26, 26);
     color: rgb(228, 228, 228);
     font-weight: bold;
-    font-size: 16px;
-    padding: 0.3em 1em;
+    font-size: 1em;
+    padding: 0.45em 0.7em;
     border-width: 0px;
     border-radius: 4px;
-    font-size: 20px;
     transition: background-color 0.3s, color 0.3s;
   }
   
