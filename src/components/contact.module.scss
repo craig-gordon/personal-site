@@ -1,5 +1,4 @@
 .container {
-  height: 80vh;
   background-color: rgb(43, 43, 43);
   display: flex;
   flex-direction: column;
@@ -106,7 +105,7 @@
   input,
   textarea {
     color: rgb(228, 228, 228);
-    padding: 0.5rem 1.0rem;
+    padding: 0.5em 0.8em;
     margin-bottom: 8px;
     background-color: rgb(26, 26, 26);
     border-color: rgb(26, 26, 26);
@@ -119,7 +118,7 @@
   input:focus,
   textarea:focus {
     outline: 0px;
-    box-shadow: rgba(34, 94, 168, 0.25) 0px 0px 0px 0.2rem;
+    box-shadow: rgba(34, 94, 168, 0.25) 0px 0px 0px 0.2em;
     border-color: rgba(34, 94, 168, 0.6);
     transition: box-shadow 90ms ease-in, border-color 90ms ease-in;
   }
@@ -169,9 +168,9 @@
 
 .topButtonWrapper {
   background-color: rgb(227, 27, 109);
-  padding: 0.75em 0.5em;
+  padding: 0.6em 0.4em;
   border-radius: 4px;
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
   overflow: hidden;
   transition: transform 250ms ease;
 }

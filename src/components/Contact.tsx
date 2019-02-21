@@ -60,7 +60,7 @@ class Contact extends React.Component {
         <form className={`${styles.form} hidden`} action="https://formspree.io/contact@craig-gordon.com" method="POST">
           <input placeholder='Name' type='text' name='name' required />
           <input placeholder='Email' type='email' name='_replyto' required />
-          <textarea placeholder='Your message' rows='5' type='text' name='message' required />
+          <textarea placeholder='Your message' rows='7' type='text' name='message' required />
           <div className={styles.sendOuter}>
             <button className={styles.sendInner} type='submit' value='Send'>
               <span style={{marginRight: '0.5em'}}>Send</span>
@@ -69,7 +69,7 @@ class Contact extends React.Component {
           </div>
         </form>
         <div className={styles.pageBottomContainer}>
-          <IconContext.Provider value={{color: 'rgb(249, 249, 249)', className: styles.topIcon, size: '2em'}}>
+          <IconContext.Provider value={{color: 'rgb(249, 249, 249)', className: styles.topIcon, size: '1.5em'}}>
             <a
               href='#'
               className={`${styles.topButtonWrapper}`}

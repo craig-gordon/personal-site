@@ -12,10 +12,10 @@ const About = () => (
         <h1 className='section-header hidden'>ABOUT</h1>
         <div className={`${styles.headerUnderline} hidden`} />
       </div>
-      <Trait name='Modern' icon='FaCubes' description='I create software using cutting-edge tools with a strong foundation of HTML, CSS, and JavaScript.' />
-      <Trait name='Intuitive' icon='FaLightbulb' description='The user is king. I design & develop with the end user experience foremost in mind.' />
-      <Trait name='Performant' icon='FaRocket' description='From first paint to smooth UI effects, I optimize every step of the user experience.' />
-      <Trait name='Dynamic' icon='FaCogs' description='I harness the power of contemporary frameworks and design to bring static webpages to life.' />
+      <Trait name='Modern' icon='FaCubes' description='I utilize cutting-edge tools with a strong foundation of HTML, CSS, and JS.' />
+      <Trait name='Intuitive' icon='FaLightbulb' description='I design & develop with the end user foremost in mind.' />
+      <Trait name='Performant' icon='FaRocket' description='From first paint to smooth animations, I optimize every step of the UX.' />
+      <Trait name='Dynamic' icon='FaCogs' description='I employ contemporary frameworks & design to bring static pages to life.' />
       <div className={`${styles.bioContainer} hidden`}>
         <img className={styles.headshot} src='me.png' />
         <h4 className={styles.headshotTag}>Playing Mega Man 2 live during AGDQ '18</h4>

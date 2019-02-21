@@ -1,8 +1,7 @@
 .container {
-  height: 100vh;
   background-color: rgb(240, 240, 240);
   color: rgb(99, 99, 99);
-  padding: 2%;
+  padding: 5em 2em;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -20,7 +19,7 @@
 .header {
   color: rgb(49, 49, 49);
   grid-column: span 4;
-  margin-bottom: calc(8vh - 2%) !important;
+  margin-bottom: 3em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,7 +43,7 @@
 }
 
 .headerUnderline {
-  width: 5em;
+  width: 4em;
   height: 5px;
   background: rgb(49, 49, 49);
 }
@@ -64,8 +63,9 @@
 }
 
 .headshot {
-  width: 40%;
+  width: 14em;
   border-radius: 50%;
+  margin-top: 1em;
   margin-bottom: 12px;
 }
 

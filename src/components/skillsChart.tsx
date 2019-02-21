@@ -7,7 +7,7 @@ import skillsSeries from '../data/skills';
 
 const options = {
   chart: {
-    height: '75%',
+    height: '65%',
     type: 'packedbubble'
   },
   credits: {

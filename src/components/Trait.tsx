@@ -7,28 +7,28 @@ import styles from './trait.module.scss';
 
 const iconMap = {
   FaCubes: (
-    <IconContext.Provider value={{color: 'rgb(249, 249, 249)', className: styles.icon, size: '3.5em'}}>
+    <IconContext.Provider value={{color: 'rgb(249, 249, 249)', className: styles.icon, size: '3em'}}>
       <div className={`${styles.iconWrapper} ${styles.one}`}>
         <FaCubes />
       </div>
     </IconContext.Provider>
   ),
   FaLightbulb: (
-    <IconContext.Provider value={{color: 'rgb(249, 249, 249)', className: styles.icon, size: '3.5em'}}>
+    <IconContext.Provider value={{color: 'rgb(249, 249, 249)', className: styles.icon, size: '3em'}}>
       <div className={`${styles.iconWrapper} ${styles.two}`}>
         <FaLightbulb />
       </div>
     </IconContext.Provider>
   ),
   FaRocket: (
-    <IconContext.Provider value={{color: 'rgb(249, 249, 249)', className: styles.icon, size: '3.5em'}}>
+    <IconContext.Provider value={{color: 'rgb(249, 249, 249)', className: styles.icon, size: '3em'}}>
       <div className={`${styles.iconWrapper} ${styles.three}`}>
         <FaRocket />
       </div>
     </IconContext.Provider>
   ),
   FaCogs: (
-    <IconContext.Provider value={{color: 'rgb(249, 249, 249)', className: styles.icon, size: '3.5em'}}>
+    <IconContext.Provider value={{color: 'rgb(249, 249, 249)', className: styles.icon, size: '3em'}}>
       <div className={`${styles.iconWrapper} ${styles.four}`}>
         <FaCogs />
       </div>
