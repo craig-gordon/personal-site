@@ -9,16 +9,15 @@
 
 .grid {
   display: grid;
-  grid-template-rows: auto auto auto;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 2%;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5em;
   align-content: center;
   max-width: 1260px;
 }
 
 .header {
   color: rgb(49, 49, 49);
-  grid-column: span 4;
+  grid-column: span 2;
   margin-bottom: 3em;
   display: flex;
   flex-direction: column;
@@ -97,4 +96,15 @@
 .chartContainer:global(.hidden) {
   transform: translateX(10vw);
   opacity: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .grid {
+    grid-template-rows: auto auto auto;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .header {
+    grid-column: span 4;
+  }
 }

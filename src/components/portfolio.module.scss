@@ -8,12 +8,22 @@
 }
 
 .grid {
-  height: 32em;
   justify-self: center;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 2vw;
-  margin: 0 2vw 5vh 2vw;
+  grid-gap: 2em;
+  margin: 0 2em 4em 2em;
+}
+
+@media screen and (min-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .header {

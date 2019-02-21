@@ -5,7 +5,8 @@
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
   border-radius: 8px;
   display: grid;
-  height: inherit;
+  height: 32em;
+  max-width: 24em;
   grid-template-rows: 3fr 2fr;
   transition: transform 250ms ease, box-shadow 250ms ease;
 }
