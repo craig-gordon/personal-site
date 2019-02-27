@@ -79,7 +79,8 @@ class Contact extends React.Component {
               <FaAngleDoubleUp />
             </a>
           </IconContext.Provider>
-          <h6>CRAIG GORDON <span className={styles.copyright}>© 2019</span></h6>
+          <h6 className={styles.copyrightLine}>CRAIG GORDON <span className={styles.copyright}>© 2019</span>.</h6>
+          <h6>Parallax effect by <a className={styles.credit} href='https://codepen.io/aglosson/' target='_blank'>Amanda Glosson</a>.</h6>
         </div>
       </div>
     );

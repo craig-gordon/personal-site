@@ -212,6 +212,20 @@
   }
 }
 
+.copyrightLine {
+  padding: 0 0 0.3em 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
 .copyright {
   color: rgb(65, 182, 196);
+}
+
+.credit {
+  color: rgb(65, 182, 196);
+}
+
+.credit:hover {
+  text-decoration: underline;
 }
