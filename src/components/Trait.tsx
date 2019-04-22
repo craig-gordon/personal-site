@@ -1,11 +1,14 @@
 import React from 'react';
-
 import { IconContext } from 'react-icons';
 import { FaCogs, FaCubes, FaLightbulb, FaRocket } from 'react-icons/fa';
 
 import styles from './trait.module.scss';
 
-const iconMap = {
+interface IconMap {
+  [index: string]: JSX.Element;
+}
+
+const iconMap: IconMap = {
   FaCubes: (
     <IconContext.Provider
       value={{

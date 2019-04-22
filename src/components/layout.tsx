@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import './layout.scss';
 
-const Layout = ({ children }) => (
-  <div className='layout'>
-    { children }
-  </div>
+interface Props {
+  children: ReactNode;
+}
+
+const Layout = ({ children }: Props) => (
+  <div className='layout'>{children}</div>
 );
 
 export default Layout;

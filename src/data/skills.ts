@@ -1,269 +1,267 @@
-interface SkillObject {
+export interface SkillObject {
   marker: {
-    symbol: string
+    symbol: string;
   };
-  data: Array<
-    {
-      name: string,
-      value: number
-    }
-  >;
+  data: {
+    name: string;
+    value: number;
+  }[];
 }
 
-const skillsSeries: Array<SkillObject> = [
-    {
-      marker: {
-        symbol: 'url(javascript.svg)'
-      },
-      data: [
-        {
-          name: 'JavaScript',
-          value: 90
-        }
-      ]
+const skillsSeries: SkillObject[] = [
+  {
+    marker: {
+      symbol: 'url(javascript.svg)'
     },
-    {
-      marker: {
-        symbol: 'url(typescript.svg)'
-      },
-      data: [
-        {
-          name: 'TypeScript',
-          value: 50
-        }
-      ]
+    data: [
+      {
+        name: 'JavaScript',
+        value: 90
+      }
+    ]
+  },
+  {
+    marker: {
+      symbol: 'url(typescript.svg)'
     },
-    {
-      marker: {
-        symbol: 'url(html5.svg)'
-      },
-      data: [
-        {
-          name: 'HTML5',
-          value: 80
-        }
-      ]
+    data: [
+      {
+        name: 'TypeScript',
+        value: 50
+      }
+    ]
+  },
+  {
+    marker: {
+      symbol: 'url(html5.svg)'
     },
-    {
-      marker: {
-        symbol: 'url(css3.svg)'
-      },
-      data: [
-        {
-          name: 'CSS3',
-          value: 80
-        }
-      ]
+    data: [
+      {
+        name: 'HTML5',
+        value: 80
+      }
+    ]
+  },
+  {
+    marker: {
+      symbol: 'url(css3.svg)'
     },
-    {
-      marker: {
-        symbol: 'url(sql.svg)'
-      },
-      data: [
-        {
-          name: 'SQL',
-          value: 70
-        }
-      ]
+    data: [
+      {
+        name: 'CSS3',
+        value: 80
+      }
+    ]
+  },
+  {
+    marker: {
+      symbol: 'url(sql.svg)'
     },
-    {
-      marker: {
-        symbol: 'url(react.svg)'
-      },
-      data: [
-        {
-          name: 'React',
-          value: 90
-        }
-      ]
+    data: [
+      {
+        name: 'SQL',
+        value: 70
+      }
+    ]
+  },
+  {
+    marker: {
+      symbol: 'url(react.svg)'
     },
-    {
-      marker: {
-        symbol: 'url(jquery.svg)'
-      },
-      data: [
-        {
-          name: 'jQuery',
-          value: 70
-        }
-      ]
+    data: [
+      {
+        name: 'React',
+        value: 90
+      }
+    ]
+  },
+  {
+    marker: {
+      symbol: 'url(jquery.svg)'
     },
-    {
-      marker: {
-        symbol: 'url(redux.svg)'
-      },
-      data: [
-        {
-          name: 'Redux',
-          value: 70
-        }
-      ]
+    data: [
+      {
+        name: 'jQuery',
+        value: 70
+      }
+    ]
+  },
+  {
+    marker: {
+      symbol: 'url(redux.svg)'
     },
-    {
-      marker: {
-        symbol: 'url(highcharts.svg)'
-      },
-      data: [
-        {
-          name: 'Highcharts',
-          value: 80
-        }
-      ]
+    data: [
+      {
+        name: 'Redux',
+        value: 70
+      }
+    ]
+  },
+  {
+    marker: {
+      symbol: 'url(highcharts.svg)'
     },
-    {
-      marker: {
-        symbol: 'url(sass.svg)'
-      },
-      data: [
-        {
-          name: 'Sass',
-          value: 60
-        }
-      ]
+    data: [
+      {
+        name: 'Highcharts',
+        value: 80
+      }
+    ]
+  },
+  {
+    marker: {
+      symbol: 'url(sass.svg)'
     },
-    {
-      marker: {
-        symbol: 'url(styledcomponents.svg)'
-      },
-      data: [
-        {
-          name: 'Styled-Components',
-          value: 70
-        }
-      ]
+    data: [
+      {
+        name: 'Sass',
+        value: 60
+      }
+    ]
+  },
+  {
+    marker: {
+      symbol: 'url(styledcomponents.svg)'
     },
-    {
-      marker: {
-        symbol: 'url(bootstrap.svg)'
-      },
-      data: [
-        {
-          name: 'Bootstrap',
-          value: 70
-        }
-      ]
+    data: [
+      {
+        name: 'Styled-Components',
+        value: 70
+      }
+    ]
+  },
+  {
+    marker: {
+      symbol: 'url(bootstrap.svg)'
     },
-    {
-      marker: {
-        symbol: 'url(node.svg)'
-      },
-      data: [
-        {
-          name: 'Node',
-          value: 90
-        }
-      ]
+    data: [
+      {
+        name: 'Bootstrap',
+        value: 70
+      }
+    ]
+  },
+  {
+    marker: {
+      symbol: 'url(node.svg)'
     },
-    {
-      marker: {
-        symbol: 'url(express.svg)'
-      },
-      data: [
-        {
-          name: 'Express',
-          value: 90
-        }
-      ]
+    data: [
+      {
+        name: 'Node',
+        value: 90
+      }
+    ]
+  },
+  {
+    marker: {
+      symbol: 'url(express.svg)'
     },
-    {
-      marker: {
-        symbol: 'url(sequelize.svg)'
-      },
-      data: [
-        {
-          name: 'Sequelize',
-          value: 80
-        }
-      ]
+    data: [
+      {
+        name: 'Express',
+        value: 90
+      }
+    ]
+  },
+  {
+    marker: {
+      symbol: 'url(sequelize.svg)'
     },
-    {
-      marker: {
-        symbol: 'url(mongodb.svg)'
-      },
-      data: [
-        {
-          name: 'MongoDB',
-          value: 60
-        }
-      ]
+    data: [
+      {
+        name: 'Sequelize',
+        value: 80
+      }
+    ]
+  },
+  {
+    marker: {
+      symbol: 'url(mongodb.svg)'
     },
-    {
-      marker: {
-        symbol: 'url(mocha.svg)'
-      },
-      data: [
-        {
-          name: 'Mocha',
-          value: 60
-        }
-      ]
+    data: [
+      {
+        name: 'MongoDB',
+        value: 60
+      }
+    ]
+  },
+  {
+    marker: {
+      symbol: 'url(mocha.svg)'
     },
-    {
-      marker: {
-        symbol: 'url(jest.svg)'
-      },
-      data: [
-        {
-          name: 'Jest',
-          value: 60
-        }
-      ]
+    data: [
+      {
+        name: 'Mocha',
+        value: 60
+      }
+    ]
+  },
+  {
+    marker: {
+      symbol: 'url(jest.svg)'
     },
-    {
-      marker: {
-        symbol: 'url(git.svg)'
-      },
-      data: [
-        {
-          name: 'Git',
-          value: 80
-        }
-      ]
+    data: [
+      {
+        name: 'Jest',
+        value: 60
+      }
+    ]
+  },
+  {
+    marker: {
+      symbol: 'url(git.svg)'
     },
-    {
-      marker: {
-        symbol: 'url(webpack.svg)'
-      },
-      data: [
-        {
-          name: 'Webpack',
-          value: 80
-        }
-      ]
+    data: [
+      {
+        name: 'Git',
+        value: 80
+      }
+    ]
+  },
+  {
+    marker: {
+      symbol: 'url(webpack.svg)'
     },
-    {
-      marker: {
-        symbol: 'url(rest.svg)'
-      },
-      data: [
-        {
-          name: 'RESTful APIs',
-          value: 90
-        }
-      ]
+    data: [
+      {
+        name: 'Webpack',
+        value: 80
+      }
+    ]
+  },
+  {
+    marker: {
+      symbol: 'url(rest.svg)'
     },
-    {
-      marker: {
-        symbol: 'url(chrome.svg)'
-      },
-      data: [
-        {
-          name: 'Chrome APIs',
-          value: 60
-        }
-      ]
+    data: [
+      {
+        name: 'RESTful APIs',
+        value: 90
+      }
+    ]
+  },
+  {
+    marker: {
+      symbol: 'url(chrome.svg)'
     },
-    {
-      marker: {
-        symbol: 'url(gatsby.svg)'
-      },
-      data: [
-        {
-          name: 'Gatsby',
-          value: 60
-        }
-      ]
-    }
-  ];
+    data: [
+      {
+        name: 'Chrome APIs',
+        value: 60
+      }
+    ]
+  },
+  {
+    marker: {
+      symbol: 'url(gatsby.svg)'
+    },
+    data: [
+      {
+        name: 'Gatsby',
+        value: 60
+      }
+    ]
+  }
+];
 
 export default skillsSeries;

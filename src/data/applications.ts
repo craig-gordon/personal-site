@@ -1,4 +1,4 @@
-interface ApplicationObject {
+export interface ApplicationObject {
   description: string;
   website?: string;
   github: string;
@@ -6,17 +6,16 @@ interface ApplicationObject {
   logo?: string;
   banner: string;
   tag: string;
-  tools: Array<
-    {
-      name: string,
-      icon: string
-    }
-  >
+  tools: {
+    name: string;
+    icon: string;
+  }[];
 }
 
-const data: Array<ApplicationObject> = [
+const data: ApplicationObject[] = [
   {
-    description: 'Emotion analysis platform for video creators, featuring A/B testing tools and a full-featured analytics suite.',
+    description:
+      'Emotion analysis platform for video creators, featuring A/B testing tools and a full-featured analytics suite.',
     website: 'http://emolytics.herokuapp.com/',
     github: 'https://github.com/craig-gordon/emolytics',
     title: 'Emolytics',
@@ -67,7 +66,8 @@ const data: Array<ApplicationObject> = [
     ]
   },
   {
-    description: 'Web platform for the speedrun & high score communities to present the history of the games they play.',
+    description:
+      'Web platform for the speedrun & high score communities to present the history of the games they play.',
     title: 'Record History',
     website: 'https://recordhistory.io/',
     github: 'https://github.com/craig-gordon/wrhistory',
@@ -114,9 +114,11 @@ const data: Array<ApplicationObject> = [
     ]
   },
   {
-    description: 'Browser extension that prevents vanity searching on Twitter, Reddit, and other popular sites.',
+    description:
+      'Browser extension that prevents vanity searching on Twitter, Reddit, and other popular sites.',
     title: 'Anti-Vanity',
-    website: 'https://chrome.google.com/webstore/detail/anti-vanity/opegemmbgaganccilpoflamfeffkcioe',
+    website:
+      'https://chrome.google.com/webstore/detail/anti-vanity/opegemmbgaganccilpoflamfeffkcioe',
     github: 'https://github.com/craig-gordon/anti-vanity',
     logo: 'antivanity-logo.svg',
     banner: 'antivanity-banner.png',
@@ -145,7 +147,8 @@ const data: Array<ApplicationObject> = [
     ]
   },
   {
-    description: 'Browser simulation of the classic Nintendo series, Advance Wars.',
+    description:
+      'Browser simulation of the classic Nintendo series, Advance Wars.',
     title: 'Neowars',
     website: 'https://neowars.herokuapp.com/',
     github: 'https://github.com/craig-gordon/neowars',
@@ -172,7 +175,7 @@ const data: Array<ApplicationObject> = [
       {
         name: 'Heroku',
         icon: 'heroku.svg'
-      }      
+      }
     ]
   }
 ];

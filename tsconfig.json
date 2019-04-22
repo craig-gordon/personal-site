@@ -3,18 +3,12 @@
     "module": "ES6",
     "moduleResolution": "node",
     "target": "ESNext",
+    "strict": true,
     "jsx": "preserve",
     "noEmit": true,
     "esModuleInterop": true,
     "noUnusedLocals": false,
-    "typeRoots": [
-      "./node_modules/@types",
-      "./src/utils/typings"
-    ]
+    "typeRoots": ["./node_modules/@types", "./src/utils/typings"]
   },
-  "exclude": [
-    "node_modules",
-    "public",
-    ".cache"
-  ]
+  "exclude": ["node_modules", "public", ".cache"]
 }
