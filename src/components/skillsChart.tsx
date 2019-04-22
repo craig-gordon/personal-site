@@ -5,7 +5,7 @@ import './skillsChart.scss';
 
 import skillsSeries from '../data/skills';
 
-const options = {
+const options: Highcharts.Options = {
   chart: {
     height: '65%',
     type: 'packedbubble'
@@ -15,6 +15,7 @@ const options = {
   },
   tooltip: {
     enabled: true,
+    hideDelay: 200,
     headerFormat: null,
     pointFormat: '<b>{point.name}</b>'
   },
@@ -34,60 +35,35 @@ const options = {
       minSize: '50%'
     },
     series: {
+      stickyTracking: false,
       states: {
         hover: {
           halo: false
-        }
-      },
-      events: {
-        legendItemClick: function(event) {
-          if (!this.visible) {
-            return true;
-          }
-
-          let seriesIndex = this.index;
-          let series = this.chart.series;
-          
-          for (let i = 0; i < series.length; i++) {
-            if (series[i].index != seriesIndex) {
-              series[i].visible ? series[i].hide() : series[i].show();
-            }
-          }
-          
-          return false;
         }
       }
     }
   },
   responsive: {
-    rules: [{
-      chartOptions: {
-        legend: {
-          align: 'right',
-          layout: 'vertical',
-          verticalAlign: 'middle'
+    rules: [
+      {
+        chartOptions: {
+          legend: {
+            align: 'right',
+            layout: 'vertical',
+            verticalAlign: 'middle'
+          }
+        },
+        condition: {
+          maxWidth: 500
         }
-      },
-      condition: {
-        maxWidth: 500
-      },
-    }]
+      }
+    ]
   },
   series: skillsSeries
 };
 
 const SkillsChart = () => (
-  <HighchartsReact
-    highcharts={Highcharts}
-    options={options}
-    callback={(chart) => {
-      for (let i = 0; i < chart.series.length; i++) {
-        for (let j = 0; j < chart.series[i].data.length; j++) {
-          console.log('point:', chart.series[i].data[j]);
-        }
-      }
-    }}
-  />
+  <HighchartsReact highcharts={Highcharts} options={options} />
 );
 
 export default SkillsChart;

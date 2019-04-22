@@ -1,4 +1,20 @@
-const data = [
+interface ApplicationObject {
+  description: string;
+  website?: string;
+  github: string;
+  title: string;
+  logo?: string;
+  banner: string;
+  tag: string;
+  tools: Array<
+    {
+      name: string,
+      icon: string
+    }
+  >
+}
+
+const data: Array<ApplicationObject> = [
   {
     description: 'Emotion analysis platform for video creators, featuring A/B testing tools and a full-featured analytics suite.',
     website: 'http://emolytics.herokuapp.com/',

@@ -57,7 +57,7 @@ class Contact extends React.Component {
           <span className={`${styles.subheaderLeft} hidden`} style={{marginRight: '0.5em'}}>Have a question?</span>
           <span className={`${styles.subheaderRight} hidden`}>Want to work together?</span>
         </h3>
-        <form className={`${styles.form} hidden`} action="https://formspree.io/contact@craig-gordon.com" method="POST">
+        <form className={`${styles.form} hidden`} action="https://formspree.io/cyghfer@gmail.com" method="POST">
           <input placeholder='Name' type='text' name='name' required />
           <input placeholder='Email' type='email' name='_replyto' required />
           <textarea placeholder='Your message' rows='7' type='text' name='message' required />
