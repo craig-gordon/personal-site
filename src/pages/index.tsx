@@ -10,44 +10,54 @@ import Contact from '../components/Contact';
 
 import throttle from 'lodash/throttle';
 
-class App extends React.Component {
-  public constructor(props) {
-    super(props);
-    this.state = {
-      yPos: null,
-      navbarFixed: false,
-      currentNavItem: 0
-    };
-    this.viewportHeight = null;
-    this.aboutY = null;
-    this.portfolioY = null;
-    this.contactY = null;
-    this.updateYPosition = throttle(this.updateYPosition.bind(this), 200);
-  }
+interface State {
+  yPos: number;
+  navbarFixed: boolean;
+  currentNavItem: number;
+}
+
+class App extends React.Component<{}, State> {
+  public state = {
+    yPos: 0,
+    navbarFixed: false,
+    currentNavItem: 0
+  };
+
+  private viewportHeight = 0;
+  private aboutY = 0;
+  private portfolioY = 0;
+  private contactY = 0;
 
   public componentDidMount() {
+    this.updateYPosition = throttle(this.updateYPosition.bind(this), 200);
     this.setState({ yPos: window.scrollY });
     window.addEventListener('scroll', this.updateYPosition);
-    let aboutRect = document.getElementById('about').getBoundingClientRect();
-    let portfolioRect = document
-      .getElementById('portfolio')
-      .getBoundingClientRect();
-    let contactRect = document
-      .getElementById('contact')
-      .getBoundingClientRect();
+    let aboutRect = (document.getElementById(
+      'about'
+    ) as HTMLElement).getBoundingClientRect();
+    let portfolioRect = (document.getElementById(
+      'portfolio'
+    ) as HTMLElement).getBoundingClientRect();
+    let contactRect = (document.getElementById(
+      'contact'
+    ) as HTMLElement).getBoundingClientRect();
     this.viewportHeight = window.innerHeight;
-    this.aboutY = Math.floor(aboutRect.y - aboutRect.height / 2 - 250);
-    this.portfolioY = Math.floor(
-      portfolioRect.y - portfolioRect.height / 2 - 100
+    this.aboutY = Math.floor(
+      (aboutRect as DOMRect).y - aboutRect.height / 2 - 250
     );
-    this.contactY = Math.floor(contactRect.y - portfolioRect.height / 2);
+    this.portfolioY = Math.floor(
+      (portfolioRect as DOMRect).y - portfolioRect.height / 2 - 100
+    );
+    this.contactY = Math.floor(
+      (contactRect as DOMRect).y - portfolioRect.height / 2
+    );
   }
 
   public componentWillUnmount() {
     window.removeEventListener('scroll', this.updateYPosition);
   }
 
-  public componentDidUpdate(prevProps, prevState) {
+  public componentDidUpdate(prevProps: {}, prevState: State) {
     // Toggle Navbar visibility
     if (prevState.yPos - this.state.yPos >= 10) {
       this.setState({ navbarFixed: true });

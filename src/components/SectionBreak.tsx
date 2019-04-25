@@ -5,7 +5,7 @@ import styles from './sectionBreak.module.scss';
 interface Props {
   color: string;
   bgColor: string;
-  fadeIn: boolean;
+  fadeIn?: boolean;
 }
 
 const SectionBreak = (props: Props) => (

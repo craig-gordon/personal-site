@@ -1,30 +1,38 @@
 import React from 'react';
 import styles from './navbar.module.scss';
 
-class NavBar extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      fixed: this.props.fixed
-    };
-    this.container = null;
-  }
+interface Props {
+  fixed: boolean;
+  current: number;
+}
 
-  componentDidMount() {
+interface State {
+  fixed: boolean;
+}
+
+class NavBar extends React.Component<Props, State> {
+  public state = {
+    fixed: this.props.fixed
+  };
+
+  private container: Element | null = null;
+
+  public componentDidMount() {
     this.container = document.getElementsByClassName(styles.container)[0];
   }
 
-  componentDidUpdate(prevProps) {
+  public componentDidUpdate(prevProps: Props) {
     if (prevProps.fixed !== this.props.fixed) {
       this.setState(
-        (state, props) => ({ fixed: this.props.fixed }),
+        () => ({ fixed: this.props.fixed }),
         () => {
           if (this.state.fixed) {
-            this.container.classList.add('fixed');
+            (this.container as Element).classList.add('fixed');
           } else {
-            this.container.classList.add('remove');
+            (this.container as Element).classList.add('remove');
             setTimeout(
-              () => this.container.classList.remove('fixed', 'remove'),
+              () =>
+                (this.container as Element).classList.remove('fixed', 'remove'),
               250
             );
           }
@@ -33,7 +41,7 @@ class NavBar extends React.Component {
     }
   }
 
-  render() {
+  public render() {
     return (
       <div className={styles.container}>
         <h5
