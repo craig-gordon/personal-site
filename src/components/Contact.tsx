@@ -57,6 +57,7 @@ class Contact extends React.Component<{}, State> {
               <a
                 href='https://www.linkedin.com/in/craig-gordon/'
                 target='_blank'
+                rel='noopener noreferrer'
                 title='Linkedin'
               >
                 <FaLinkedinIn />
@@ -74,6 +75,7 @@ class Contact extends React.Component<{}, State> {
               <a
                 href='https://github.com/craig-gordon'
                 target='_blank'
+                rel='noopener noreferrer'
                 title='Github'
               >
                 <FaGithub />
@@ -161,6 +163,7 @@ class Contact extends React.Component<{}, State> {
               className={styles.credit}
               href='https://codepen.io/aglosson/'
               target='_blank'
+              rel='noopener noreferrer'
             >
               Amanda Glosson
             </a>
